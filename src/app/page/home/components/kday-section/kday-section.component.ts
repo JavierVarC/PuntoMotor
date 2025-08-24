@@ -10,16 +10,25 @@ import { Router } from '@angular/router';
   styleUrl: './kday-section.component.css'
 })
 export class KdaySectionComponent implements OnInit, OnDestroy {
+  private isTransitioningKdaySevilla = false;
+  private isTransitioningKdayCadiz = false;
+  private readonly TRANSITION_DURATION = 500;
   // Métodos para flechas del carrusel KDay Sevilla
   prevSlideKdaySevilla(): void {
-    this.slideActivoKdaySevilla = this.slideActivoKdaySevilla > 0 ? this.slideActivoKdaySevilla - 1 : this.slidesKdaySevilla.length - 1;
+  if (this.isTransitioningKdaySevilla) return;
+  this.isTransitioningKdaySevilla = true;
+  this.slideActivoKdaySevilla = this.slideActivoKdaySevilla > 0 ? this.slideActivoKdaySevilla - 1 : this.slidesKdaySevilla.length - 1;
+  setTimeout(() => { this.isTransitioningKdaySevilla = false; }, 500);
   }
   nextSlideKdaySevilla(): void {
     this.siguienteSlideKdaySevilla();
   }
   // Métodos para flechas del carrusel KDay Cádiz
   prevSlideKdayCadiz(): void {
-    this.slideActivoKdayCadiz = this.slideActivoKdayCadiz > 0 ? this.slideActivoKdayCadiz - 1 : this.slidesKdayCadiz.length - 1;
+  if (this.isTransitioningKdayCadiz) return;
+  this.isTransitioningKdayCadiz = true;
+  this.slideActivoKdayCadiz = this.slideActivoKdayCadiz > 0 ? this.slideActivoKdayCadiz - 1 : this.slidesKdayCadiz.length - 1;
+  setTimeout(() => { this.isTransitioningKdayCadiz = false; }, this.TRANSITION_DURATION);
   }
   nextSlideKdayCadiz(): void {
     this.siguienteSlideKdayCadiz();
@@ -77,7 +86,10 @@ export class KdaySectionComponent implements OnInit, OnDestroy {
   }
 
   siguienteSlideKdayCadiz(): void {
-    this.slideActivoKdayCadiz = this.slideActivoKdayCadiz < this.slidesKdayCadiz.length - 1 ? this.slideActivoKdayCadiz + 1 : 0;
+  if (this.isTransitioningKdayCadiz) return;
+  this.isTransitioningKdayCadiz = true;
+  this.slideActivoKdayCadiz = this.slideActivoKdayCadiz < this.slidesKdayCadiz.length - 1 ? this.slideActivoKdayCadiz + 1 : 0;
+  setTimeout(() => { this.isTransitioningKdayCadiz = false; }, this.TRANSITION_DURATION);
   }
 
   detenerCarruselKdayCadiz(): void {
@@ -87,7 +99,10 @@ export class KdaySectionComponent implements OnInit, OnDestroy {
   }
 
   irASlideKdayCadiz(index: number): void {
-    this.slideActivoKdayCadiz = index;
+  if (this.isTransitioningKdayCadiz || index === this.slideActivoKdayCadiz) return;
+  this.isTransitioningKdayCadiz = true;
+  this.slideActivoKdayCadiz = index;
+  setTimeout(() => { this.isTransitioningKdayCadiz = false; }, this.TRANSITION_DURATION);
   }
 
   // KDay Sevilla
@@ -96,7 +111,10 @@ export class KdaySectionComponent implements OnInit, OnDestroy {
   }
 
   siguienteSlideKdaySevilla(): void {
-    this.slideActivoKdaySevilla = this.slideActivoKdaySevilla < this.slidesKdaySevilla.length - 1 ? this.slideActivoKdaySevilla + 1 : 0;
+  if (this.isTransitioningKdaySevilla) return;
+  this.isTransitioningKdaySevilla = true;
+  this.slideActivoKdaySevilla = this.slideActivoKdaySevilla < this.slidesKdaySevilla.length - 1 ? this.slideActivoKdaySevilla + 1 : 0;
+  setTimeout(() => { this.isTransitioningKdaySevilla = false; }, 500);
   }
 
   detenerCarruselKdaySevilla(): void {
@@ -106,7 +124,10 @@ export class KdaySectionComponent implements OnInit, OnDestroy {
   }
 
   irASlideKdaySevilla(index: number): void {
-    this.slideActivoKdaySevilla = index;
+  if (this.isTransitioningKdaySevilla || index === this.slideActivoKdaySevilla) return;
+  this.isTransitioningKdaySevilla = true;
+  this.slideActivoKdaySevilla = index;
+  setTimeout(() => { this.isTransitioningKdaySevilla = false; }, 500);
   }
 
   navegarACadiz(): void {

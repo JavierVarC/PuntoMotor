@@ -21,12 +21,9 @@
         <div class="kday-gallery-card cadiz-kday">
           <div class="kday-enhanced-carousel" (mouseenter)="detenerCarruselKdayCadiz()" (mouseleave)="iniciarCarruselKdayCadiz()">
             <div class="enhanced-carousel-container">
-              <div class="enhanced-carousel-slides" 
-                   [style.transform]="'translateX(-' + (slideActivoKdayCadiz * 20) + '%)'">
-                <div class="enhanced-slide" *ngFor="let imagen of slidesKdayCadiz; let i = index">
-                  <div class="enhanced-slide-image" 
-                       [style.background-image]="'url(' + imagen + ')'">
-                  </div>
+              <div class="enhanced-carousel-slides">
+                <div class="enhanced-slide">
+                  <img [src]="slidesKdayCadiz[slideActivoKdayCadiz]" alt="KDay Cádiz" class="enhanced-slide-image" loading="lazy" />
                 </div>
               </div>
               <!-- Flechas navegación -->
@@ -37,7 +34,6 @@
                 <i class="fas fa-chevron-right"></i>
               </button>
             </div>
-            
             <div class="enhanced-indicators">
               <button *ngFor="let imagen of slidesKdayCadiz; let i = index"
                       class="enhanced-indicator" 
@@ -52,12 +48,9 @@
         <div class="kday-gallery-card sevilla-kday">
           <div class="kday-enhanced-carousel" (mouseenter)="detenerCarruselKdaySevilla()" (mouseleave)="iniciarCarruselKdaySevilla()">
             <div class="enhanced-carousel-container">
-              <div class="enhanced-carousel-slides" 
-                   [style.transform]="'translateX(-' + (slideActivoKdaySevilla * 20) + '%)'">
-                <div class="enhanced-slide" *ngFor="let imagen of slidesKdaySevilla; let i = index">
-                  <div class="enhanced-slide-image" 
-                       [style.background-image]="'url(' + imagen + ')'">
-                  </div>
+              <div class="enhanced-carousel-slides">
+                <div class="enhanced-slide">
+                  <img [src]="slidesKdaySevilla[slideActivoKdaySevilla]" alt="KDay Sevilla" class="enhanced-slide-image" loading="lazy" />
                 </div>
               </div>
               <!-- Flechas navegación -->
@@ -68,7 +61,6 @@
                 <i class="fas fa-chevron-right"></i>
               </button>
             </div>
-            
             <div class="enhanced-indicators">
               <button *ngFor="let imagen of slidesKdaySevilla; let i = index"
                       class="enhanced-indicator" 

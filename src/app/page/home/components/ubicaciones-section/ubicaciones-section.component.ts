@@ -10,16 +10,25 @@ import { CommonModule } from '@angular/common';
   styleUrl: './ubicaciones-section.component.css'
 })
 export class UbicacionesSectionComponent implements OnInit, OnDestroy {
+  private isTransitioningSevilla = false;
+  private isTransitioningCadiz = false;
+  private readonly TRANSITION_DURATION = 500;
   // Métodos para flechas del carrusel Sevilla
   prevSlideSevilla(): void {
-    this.slideActivoSevilla = this.slideActivoSevilla > 0 ? this.slideActivoSevilla - 1 : this.slidesSevilla.length - 1;
+  if (this.isTransitioningSevilla) return;
+  this.isTransitioningSevilla = true;
+  this.slideActivoSevilla = this.slideActivoSevilla > 0 ? this.slideActivoSevilla - 1 : this.slidesSevilla.length - 1;
+  setTimeout(() => { this.isTransitioningSevilla = false; }, 500);
   }
   nextSlideSevilla(): void {
     this.siguienteSlideSevilla();
   }
   // Métodos para flechas del carrusel Cádiz
   prevSlideCadiz(): void {
-    this.slideActivoCadiz = this.slideActivoCadiz > 0 ? this.slideActivoCadiz - 1 : this.slidesCadiz.length - 1;
+  if (this.isTransitioningCadiz) return;
+  this.isTransitioningCadiz = true;
+  this.slideActivoCadiz = this.slideActivoCadiz > 0 ? this.slideActivoCadiz - 1 : this.slidesCadiz.length - 1;
+  setTimeout(() => { this.isTransitioningCadiz = false; }, this.TRANSITION_DURATION);
   }
   nextSlideCadiz(): void {
     this.siguienteSlideCadiz();
@@ -69,7 +78,10 @@ export class UbicacionesSectionComponent implements OnInit, OnDestroy {
   }
 
   siguienteSlideCadiz(): void {
-    this.slideActivoCadiz = this.slideActivoCadiz < this.slidesCadiz.length - 1 ? this.slideActivoCadiz + 1 : 0;
+  if (this.isTransitioningCadiz) return;
+  this.isTransitioningCadiz = true;
+  this.slideActivoCadiz = this.slideActivoCadiz < this.slidesCadiz.length - 1 ? this.slideActivoCadiz + 1 : 0;
+  setTimeout(() => { this.isTransitioningCadiz = false; }, this.TRANSITION_DURATION);
   }
 
   detenerCarruselCadiz(): void {
@@ -79,7 +91,10 @@ export class UbicacionesSectionComponent implements OnInit, OnDestroy {
   }
 
   irASlideCadiz(index: number): void {
-    this.slideActivoCadiz = index;
+  if (this.isTransitioningCadiz || index === this.slideActivoCadiz) return;
+  this.isTransitioningCadiz = true;
+  this.slideActivoCadiz = index;
+  setTimeout(() => { this.isTransitioningCadiz = false; }, this.TRANSITION_DURATION);
   }
 
   // Métodos para carrusel de Sevilla
@@ -88,7 +103,10 @@ export class UbicacionesSectionComponent implements OnInit, OnDestroy {
   }
 
   siguienteSlideSevilla(): void {
-    this.slideActivoSevilla = this.slideActivoSevilla < this.slidesSevilla.length - 1 ? this.slideActivoSevilla + 1 : 0;
+  if (this.isTransitioningSevilla) return;
+  this.isTransitioningSevilla = true;
+  this.slideActivoSevilla = this.slideActivoSevilla < this.slidesSevilla.length - 1 ? this.slideActivoSevilla + 1 : 0;
+  setTimeout(() => { this.isTransitioningSevilla = false; }, 500);
   }
 
   detenerCarruselSevilla(): void {
@@ -98,7 +116,10 @@ export class UbicacionesSectionComponent implements OnInit, OnDestroy {
   }
 
   irASlideSevilla(index: number): void {
-    this.slideActivoSevilla = index;
+  if (this.isTransitioningSevilla || index === this.slideActivoSevilla) return;
+  this.isTransitioningSevilla = true;
+  this.slideActivoSevilla = index;
+  setTimeout(() => { this.isTransitioningSevilla = false; }, 500);
   }
 
   // Métodos de navegación
