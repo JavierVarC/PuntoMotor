@@ -1,0 +1,71 @@
+<!-- Sección KDay -->
+<section class="kday-section">
+  <div class="container">
+    
+    <!-- Título principal de la sección -->
+    <div class="kday-section-header">
+      <h2 class="kday-main-title">
+        Experiencias 
+        <img src="assets/img/Kday.png" alt="KDay Logo" class="kday-logo-inline" loading="lazy">
+      </h2>
+      <p class="kday-subtitle">Aventuras únicas que despiertan tus sentidos</p>
+    </div>
+
+    <!-- Layout principal mejorado -->
+    <div class="kday-layout">
+      
+      <!-- Carruseles lado a lado -->
+      <div class="kday-gallery-grid">
+        
+        <!-- Carrusel KDay Cádiz -->
+        <div class="kday-gallery-card cadiz-kday">
+          <div class="kday-enhanced-carousel" (mouseenter)="detenerCarruselKdayCadiz()" (mouseleave)="iniciarCarruselKdayCadiz()">
+            <div class="enhanced-carousel-container">
+              <div class="enhanced-carousel-slides" 
+                   [style.transform]="'translateX(-' + (slideActivoKdayCadiz * 20) + '%)'">
+                <div class="enhanced-slide" *ngFor="let imagen of slidesKdayCadiz; let i = index">
+                  <div class="enhanced-slide-image" 
+                       [style.background-image]="'url(' + imagen + ')'">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="enhanced-indicators">
+              <button *ngFor="let imagen of slidesKdayCadiz; let i = index"
+                      class="enhanced-indicator" 
+                      [class.active]="i === slideActivoKdayCadiz"
+                      (click)="irASlideKdayCadiz(i)">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carrusel KDay Sevilla -->
+        <div class="kday-gallery-card sevilla-kday">
+          <div class="kday-enhanced-carousel" (mouseenter)="detenerCarruselKdaySevilla()" (mouseleave)="iniciarCarruselKdaySevilla()">
+            <div class="enhanced-carousel-container">
+              <div class="enhanced-carousel-slides" 
+                   [style.transform]="'translateX(-' + (slideActivoKdaySevilla * 20) + '%)'">
+                <div class="enhanced-slide" *ngFor="let imagen of slidesKdaySevilla; let i = index">
+                  <div class="enhanced-slide-image" 
+                       [style.background-image]="'url(' + imagen + ')'">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="enhanced-indicators">
+              <button *ngFor="let imagen of slidesKdaySevilla; let i = index"
+                      class="enhanced-indicator" 
+                      [class.active]="i === slideActivoKdaySevilla"
+                      (click)="irASlideKdaySevilla(i)">
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+<!-- Carrusel de cabecera -->
+<section class="hero-carousel" 
+         (mouseenter)="detenerCarrusel()" 
+         (mouseleave)="reanudarCarrusel()">
+  
+  <!-- Contenedor de slides -->
+  <div class="carousel-container">
+    <div class="carousel-slides" 
+         [style.transform]="'translateX(-' + (slideActivo * 25) + '%)'">
+      
+      <div class="carousel-slide" 
+           *ngFor="let slide of slides; let i = index"
+           [class.active]="i === slideActivo">
+        
+        <!-- Imagen de fondo -->
+        <div class="slide-background" 
+             [style.background-image]="'url(' + slide.imagen + ')'"
+             [attr.data-slide]="i"
+             loading="lazy">
+        </div>
+        
+        <!-- Overlay oscuro -->
+        <div class="slide-overlay"></div>
+      </div>
+    </div>
+    
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button *ngFor="let slide of slides; let i = index"
+              class="indicator" 
+              [class.active]="i === slideActivo"
+              (click)="irASlide(i)"
+              [attr.aria-label]="'Ir a slide ' + (i + 1)">
+      </button>
+    </div>
+    
+    <!-- Video pequeño flotante -->
+    <div class="video-overlay">
+      <div class="video-small">
+        <iframe [src]="videoUrl" 
+                frameborder="0" 
+                allowfullscreen
+                allow="autoplay; encrypted-media"
+                title="Video corporativo Punto Motor">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>

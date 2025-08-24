@@ -1,0 +1,84 @@
+<!-- Sección Taller -->
+<section class="taller-section">
+  <div class="taller-container">
+
+    <!-- Grid principal 2x2 -->
+    <div class="taller-grid-container">
+      
+      <!-- Celda 1 (Arriba Izquierda): Logo del taller -->
+      <div class="taller-grid-item taller-logo-cell">
+        <img src="assets/img/taller.png" alt="Taller Kawasaki" class="taller-main-logo">
+      </div>
+
+      <!-- Celda 2 (Arriba Derecha): Video del Taller Kawasaki -->
+      <div class="taller-grid-item video-cell">
+        <div class="video-card" (click)="abrirVideo(tallerVideos[0].url)">
+          <div class="video-thumbnail">
+            <img [src]="'https://img.youtube.com/vi/' + tallerVideos[0].id + '/hqdefault.jpg'" 
+                 [alt]="tallerVideos[0].title"
+                 loading="lazy"
+                 (error)="onImageError($event)">
+            
+            <div class="video-play-overlay">
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            
+            <div class="video-info">
+              <h4>{{ tallerVideos[0].title }}</h4>
+              <p>{{ tallerVideos[0].description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Celda 3 (Abajo Izquierda): Video Z900 Kit Performance -->
+      <div class="taller-grid-item video-cell">
+        <div class="video-card" (click)="abrirVideo(tallerVideos[1].url)">
+          <div class="video-thumbnail">
+            <img [src]="'https://img.youtube.com/vi/' + tallerVideos[1].id + '/hqdefault.jpg'" 
+                 [alt]="tallerVideos[1].title"
+                 loading="lazy"
+                 (error)="onImageError($event)">
+            
+            <div class="video-play-overlay">
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            
+            <div class="video-info">
+              <h4>{{ tallerVideos[1].title }}</h4>
+              <p>{{ tallerVideos[1].description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Celda 4 (Abajo Derecha): Video Montaje AKAPROVIC -->
+      <div class="taller-grid-item video-cell">
+        <div class="video-card" (click)="abrirVideo(tallerVideos[2].url)">
+          <div class="video-thumbnail">
+            <img [src]="'https://img.youtube.com/vi/' + tallerVideos[2].id + '/hqdefault.jpg'" 
+                 [alt]="tallerVideos[2].title"
+                 loading="lazy"
+                 (error)="onImageError($event)">
+            
+            <div class="video-play-overlay">
+              <div class="play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            
+            <div class="video-info">
+              <h4>{{ tallerVideos[2].title }}</h4>
+              <p>{{ tallerVideos[2].description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,46 @@
+<section class="foto360-section">
+  <div class="foto360-container">
+
+    <!-- Contenedor de Photo Sphere Viewer -->
+    <div class="photo-sphere-container" 
+         #photoSphereContainer>
+      
+      <!-- Indicador de carga -->
+      <div class="loading-overlay" *ngIf="isLoading">
+        <div class="loading-content">
+          <img [src]="logo360" alt="360°" class="loading-logo">
+          <div class="spinner"></div>
+          <p>Cargando experiencia 360°...</p>
+          <span class="location-name">{{ currentLocation.name }}</span>
+        </div>
+      </div>
+
+      <!-- Controles personalizados dentro del visor -->
+      <div class="custom-controls-overlay">
+        <!-- Logo 360° en esquina superior derecha -->
+        <div class="logo-360-overlay">
+          <img [src]="logo360" alt="360°" class="logo-360-inset">
+        </div>
+        
+        <!-- Navegación de ubicaciones -->
+        <div class="location-navigation-overlay">
+          <button class="nav-btn-overlay prev" 
+                  (click)="prevLocation()"
+                  title="Ubicación anterior">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          
+          <div class="current-info-overlay">
+            <span class="location-name-overlay">{{ currentLocation.name }}</span>
+          </div>
+          
+          <button class="nav-btn-overlay next" 
+                  (click)="nextLocation()"
+                  title="Siguiente ubicación">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

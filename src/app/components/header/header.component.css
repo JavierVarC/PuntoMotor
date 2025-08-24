@@ -1,0 +1,634 @@
+.header {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: clamp(12px, 2.5vw, 20px);
+  padding: clamp(6px, 1.5vw, 12px) clamp(30px, 6vw, 60px);
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 60px;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+}
+
+.logo-img {
+  height: clamp(65px, 10vw, 85px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(108, 188, 44, 0.3));
+}
+
+/* Brand Title - Centered in grid */
+.brand-title {
+  position: relative;
+  justify-self: center;
+}
+
+.brand-title h1 {
+  font-size: clamp(1.5rem, 5vw, 2.8rem);
+  font-weight: 800;
+  color: white;
+  margin: 0;
+  letter-spacing: clamp(2px, 0.5vw, 6px);
+  text-transform: uppercase;
+  background-clip: text;
+  position: relative;
+}
+
+.kawasaki-logo {
+  height: clamp(55px, 8vw, 80px);
+  width: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.kawasaki-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(108, 188, 44, 0.3));
+}
+
+.brand-title:hover .kawasaki-logo {
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(108, 188, 44, 0.3));
+}
+
+/* Navigation Container */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.nav-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 12px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg, #6cbc2c, #4a9c1f);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #6cbc2c;
+  transform: translateY(-2px);
+}
+
+.dropdown-arrow {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+  margin-left: 5px;
+}
+
+.dropdown-arrow.rotated,
+.nav-item.dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+  color: #6cbc2c;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  transform: translateY(-10px);
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  border: 1px solid rgba(108, 188, 44, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  min-width: 250px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.dropdown-menu.show,
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 8px;
+  justify-self: end;
+}
+
+.social-link {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.social-link:hover::before {
+  opacity: 1;
+}
+
+.social-link.facebook {
+  background: linear-gradient(135deg, #1877f2, #0d5ecc);
+  color: white;
+}
+
+.social-link.instagram {
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+}
+
+.social-link.youtube {
+  background: linear-gradient(135deg, #ff0000, #cc0000);
+  color: white;
+}
+
+.social-link.tiktok {
+  background: linear-gradient(135deg, #000000, #333333);
+  color: white;
+}
+
+.social-link:hover {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Mobile Menu Button */
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-button:hover {
+  background: rgba(108, 188, 44, 0.1);
+  color: #6cbc2c;
+}
+
+/* Green accent lines */
+.accent-lines {
+  width: 100%;
+  position: relative;
+}
+
+.accent-line {
+  width: 100%;
+  background: linear-gradient(90deg, #6cbc2c 0%, #4a9c1f 50%, #6cbc2c 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.accent-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.line-1 {
+  height: 2px;
+  margin-bottom: 1px;
+  animation-delay: 0s;
+}
+
+.line-2 {
+  height: 3px;
+  margin-bottom: 1px;
+  animation-delay: 1s;
+}
+
+.line-3 {
+  height: 4px;
+  animation-delay: 2s;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .header-container {
+    gap: 15px;
+    padding: 10px 15px;
+  }
+  
+  .nav-list {
+    gap: 25px;
+  }
+  
+  .nav-link {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .brand-title .kawasaki-logo {
+    height: clamp(65px, 9vw, 85px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-container {
+    gap: 12px;
+    padding: 10px 15px;
+  }
+  
+  .nav-list {
+    gap: 20px;
+  }
+  
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+  
+  .brand-title .kawasaki-logo {
+    height: clamp(55px, 8vw, 70px);
+  }
+  
+  .social-link {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-container {
+    grid-template-columns: auto 1fr auto auto;
+    gap: 10px;
+    padding: clamp(8px, 2vw, 12px) clamp(15px, 4vw, 20px);
+  }
+  
+  .mobile-menu-button {
+    display: block;
+    grid-column: 3;
+    order: 1;
+  }
+  
+  .brand-title {
+    display: none; /* Ocultar en móvil para hacer espacio */
+  }
+  
+  .nav-container {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .nav-menu {
+    display: none;
+    width: 100%;
+    background: rgba(26, 26, 26, 0.98);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 15px;
+    border: 1px solid rgba(108, 188, 44, 0.2);
+  }
+  
+  .nav-menu.active {
+    display: block;
+    animation: slideDown 0.3s ease;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .nav-list {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .nav-link {
+    padding: 15px 20px;
+    border-radius: 12px;
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  
+  .social-icons {
+    gap: 8px;
+    justify-self: end;
+  }
+  
+  .social-link {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+  
+  .brand-title .kawasaki-logo {
+    height: clamp(45px, 7vw, 55px);
+  }
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    padding: 8px 12px;
+    gap: 8px;
+  }
+  
+  .logo {
+    gap: 10px;
+  }
+  
+  .logo-img {
+    height: 80px;
+  }
+  
+  .brand-title .kawasaki-logo {
+    height: clamp(40px, 6vw, 50px);
+  }
+  
+  .social-link {
+    width: 26px;
+    height: 26px;
+    font-size: 0.75rem;
+  }
+  
+  .social-icons {
+    gap: 6px;
+  }
+  
+  .nav-menu {
+    padding: 15px;
+    margin-top: 10px;
+  }
+  
+  .nav-link {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 6px 8px;
+    gap: 6px;
+  }
+  
+  .logo {
+    gap: 8px;
+  }
+  
+  .logo-img {
+    height: 75px;
+  }
+  
+  .brand-title .kawasaki-logo {
+    height: clamp(35px, 5.5vw, 45px);
+  }
+  
+  .social-link {
+    width: 24px;
+    height: 24px;
+    font-size: 0.7rem;
+  }
+  
+  .social-icons {
+    gap: 4px;
+  }
+  
+  .mobile-menu-button {
+    padding: 6px;
+    font-size: 1.3rem;
+  }
+}
+
+/* Zoom adjustments */
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .header-container {
+    padding: 10px 18px;
+  }
+  
+  .nav-list {
+    gap: 28px;
+  }
+}
+
+/* High DPI adjustments */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .logo-img {
+    height: 95px;
+  }
+  
+  .brand-title .kawasaki-logo {
+    height: clamp(70px, 10vw, 90px);
+  }
+}
+
+/* ==================== DROPDOWN MENÚ ==================== */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.rotated {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  border: 1px solid rgba(108, 188, 44, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  min-width: 250px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.dropdown-link:hover {
+  background: linear-gradient(90deg, rgba(108, 188, 44, 0.2), rgba(108, 188, 44, 0.1));
+  color: #6cbc2c;
+  transform: translateX(5px);
+}
+
+.dropdown-link i {
+  width: 16px;
+  text-align: center;
+  color: #6cbc2c;
+}
+
+/* Responsive para dropdown */
+@media (max-width: 900px) {
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    background: rgba(45, 45, 45, 0.9);
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    opacity: 1;
+    visibility: visible;
+    backdrop-filter: none;
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu,
+  .dropdown-menu.show {
+    display: block;
+  }
+  
+  .dropdown-link {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+}

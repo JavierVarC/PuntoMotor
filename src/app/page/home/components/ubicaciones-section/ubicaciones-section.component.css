@@ -1,0 +1,384 @@
+/* ==================== UBICACIONES SECTION ==================== */
+/* Ubicaciones Section */
+.ubicaciones-section {
+  padding: 50px 0;
+  background: white;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 40px);
+}
+
+/* Layout principal de ubicaciones */
+.ubicaciones-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 8vw, 80px);
+  align-items: center;
+}
+
+/* Columna de texto */
+.texto-columna {
+  padding-right: clamp(20px, 4vw, 40px);
+}
+
+.intro-text h2 {
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.intro-text h3 {
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.kawasaki-green {
+  color: #6cbc2c;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.provincia-text {
+  color: #007bff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.intro-text p {
+  color: #495057;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  text-align: justify;
+}
+
+.especialidades {
+  background: linear-gradient(135deg, #6cbc2c, #4a9c1f);
+  color: white;
+  padding: clamp(15px, 3vw, 20px) clamp(20px, 4vw, 25px);
+  border-radius: 15px;
+  margin-top: 25px;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(108, 188, 44, 0.3);
+  border: none;
+}
+
+.intro-text h2 {
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.intro-text h3 {
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.kawasaki-green {
+  color: #6cbc2c;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.provincia-text {
+  color: #007bff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.intro-text p {
+  color: #495057;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  text-align: justify;
+}
+
+.especialidades-box {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-left: 4px solid #6cbc2c;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.especialidades-text {
+  color: #495057;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.5;
+}
+
+.especialidades-text strong {
+  color: #2d2d2d;
+  font-weight: 700;
+}
+
+/* Columna de carruseles */
+.carruseles-columna {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(25px, 5vw, 35px);
+}
+
+.ubicacion-carrusel {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.ubicacion-carrusel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* Mini carrusel */
+.mini-carousel {
+  position: relative;
+  height: clamp(280px, 25vw, 320px);
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.mini-carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mini-carousel-slides {
+  display: flex;
+  width: 500%; /* 5 slides × 100% cada una */
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  transform: translate3d(0, 0, 0); /* Aceleración hardware */
+}
+
+.mini-slide {
+  flex: 0 0 20%; /* Cada slide ocupa 20% del contenedor */
+  position: relative;
+  width: 20%;
+  height: 100%;
+}
+
+.mini-slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease;
+}
+
+.mini-slide:hover .mini-slide-image {
+  transform: scale(1.03);
+}
+
+/* Indicadores mini carrusel */
+.mini-indicators {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 6px 10px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.mini-indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mini-indicator.active {
+  background: #6cbc2c;
+  transform: scale(1.4);
+}
+
+.mini-indicator:hover {
+  background: rgba(108, 188, 44, 0.8);
+  transform: scale(1.2);
+}
+
+/* Etiquetas identificativas de carruseles */
+.carrusel-label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 100;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(45, 45, 45, 0.3));
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(108, 188, 44, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.carrusel-label:hover {
+  background: linear-gradient(135deg, rgba(108, 188, 44, 0.5), rgba(74, 156, 31, 0.6));
+  border-color: rgba(108, 188, 44, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 188, 44, 0.25);
+}
+
+.carrusel-label i {
+  color: #6cbc2c;
+  margin-right: 6px;
+  font-size: 0.8rem;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+/* Responsive para ubicaciones */
+@media (max-width: 1200px) {
+  .ubicaciones-layout {
+    gap: 40px;
+    padding: 0 15px;
+  }
+  
+  .mini-carousel {
+    height: 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  .ubicaciones-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .texto-columna {
+    padding-right: 0;
+    order: 1;
+  }
+  
+  .carruseles-columna {
+    order: 2;
+  }
+  
+  .intro-text {
+    text-align: center;
+  }
+  
+  .intro-text p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ubicaciones-section {
+    padding: 50px 0;
+  }
+  
+  .carruseles-columna {
+    gap: 20px;
+  }
+  
+  .mini-carousel {
+    height: 250px;
+  }
+  
+  .carrusel-label {
+    top: 10px;
+    left: 10px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .especialidades {
+    padding: 15px 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ubicaciones-layout {
+    padding: 0 10px;
+    gap: 30px;
+  }
+  
+  .mini-carousel {
+    height: 200px;
+  }
+  
+  .carrusel-label {
+    top: 8px;
+    left: 8px;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    border-radius: 15px;
+  }
+  
+  .carrusel-label i {
+    font-size: 0.7rem;
+    margin-right: 4px;
+  }
+  
+  .mini-indicators {
+    padding: 4px 8px;
+    gap: 4px;
+    bottom: 10px;
+  }
+  
+  .mini-indicator {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .ubicaciones-section {
+    padding: 40px 0;
+  }
+  
+  .intro-text {
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+}
+
+/* Clase para provincias en negro */
+.provincia-black {
+  color: #2d2d2d;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

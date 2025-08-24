@@ -1,0 +1,81 @@
+<!-- Sección de ubicaciones -->
+<section class="ubicaciones-section">
+  <div class="container">
+    
+    <!-- Layout principal -->
+    <div class="ubicaciones-layout">
+      
+      <!-- Columna izquierda: Texto -->
+      <div class="texto-columna">
+        <div class="intro-text">
+          <h2>Concesionario oficial de <span class="kawasaki-green">KAWASAKI</span></h2>
+          <h3>en la provincia de <strong class="provincia-black">CÁDIZ</strong> y <strong class="provincia-black">SEVILLA</strong></h3>
+          <p>Con más de 20 años de experiencia en el sector, ha sabido situarse a la cabeza en la calidad y el servicio presentado a sus clientes.</p>
+          <p>Nuestros mecánicos están formados y certificados en cursos especializados de las primeras marcas del sector del motociclismo y disponemos de los más efectivos y modernos sistemas de detección y chequeo de motocicletas.</p>
+          <div class="especialidades-box">
+            <span class="especialidades-text">Estamos especializados en <strong>CICLOMOTORES, MOTOCICLETAS, Y COMPETICIÓN.</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha: Carruseles apilados -->
+      <div class="carruseles-columna">
+        
+        <!-- Carrusel Cádiz -->
+        <div class="ubicacion-carrusel cadiz-carrusel">
+          <div class="mini-carousel" (mouseenter)="detenerCarruselCadiz()" (mouseleave)="iniciarCarruselCadiz()">
+            <div class="mini-carousel-container">
+              <div class="mini-carousel-slides" 
+                   [style.transform]="'translateX(-' + (slideActivoCadiz * 20) + '%)'">
+                <div class="mini-slide" *ngFor="let imagen of slidesCadiz; let i = index">
+                  <div class="mini-slide-image" 
+                       [style.background-image]="'url(' + imagen + ')'">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mini-indicators">
+              <button *ngFor="let imagen of slidesCadiz; let i = index"
+                      class="mini-indicator" 
+                      [class.active]="i === slideActivoCadiz"
+                      (click)="irASlideCadiz(i)">
+              </button>
+            </div>
+            <!-- Etiqueta identificativa -->
+            <div class="carrusel-label" (click)="navegarACadiz()">
+              <span><i class="fas fa-map-marker-alt"></i> PUNTO MOTOR CÁDIZ</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carrusel Sevilla -->
+        <div class="ubicacion-carrusel sevilla-carrusel">
+          <div class="mini-carousel" (mouseenter)="detenerCarruselSevilla()" (mouseleave)="iniciarCarruselSevilla()">
+            <div class="mini-carousel-container">
+              <div class="mini-carousel-slides" 
+                   [style.transform]="'translateX(-' + (slideActivoSevilla * 20) + '%)'">
+                <div class="mini-slide" *ngFor="let imagen of slidesSevilla; let i = index">
+                  <div class="mini-slide-image" 
+                       [style.background-image]="'url(' + imagen + ')'">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mini-indicators">
+              <button *ngFor="let imagen of slidesSevilla; let i = index"
+                      class="mini-indicator" 
+                      [class.active]="i === slideActivoSevilla"
+                      (click)="irASlideSevilla(i)">
+              </button>
+            </div>
+            <!-- Etiqueta identificativa -->
+            <div class="carrusel-label" (click)="navegarASevilla()">
+              <span><i class="fas fa-map-marker-alt"></i> PUNTO MOTOR SEVILLA</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

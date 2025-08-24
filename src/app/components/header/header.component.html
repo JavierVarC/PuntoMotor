@@ -1,0 +1,92 @@
+<header class="header">
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="assets/img/PuntoMotor.png" alt="Punto Motor" routerLink="/" class="logo-img">
+    </div>
+
+    <!-- Brand Title - Centered -->
+    <div class="brand-title">
+      <img src="assets/img/kawasaki.png" alt="Kawasaki" class="kawasaki-logo">
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-button" (click)="toggleMenu()" aria-label="Toggle menu">
+      <i class="fas" [ngClass]="isMenuOpen ? 'fa-times' : 'fa-bars'"></i>
+    </button>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="#" class="social-link facebook" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="social-link instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="social-link youtube" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="#" class="social-link tiktok" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Navigation Menu Container -->
+  <div class="nav-container">
+    <nav class="nav-menu" [class.active]="isMenuOpen">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a routerLink="/home" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a routerLink="/modelos" 
+             routerLinkActive="active" 
+             class="nav-link">
+            Nuestros Modelos
+            <span class="dropdown-arrow">▼</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">
+              <a [routerLink]="['/modelos']" [fragment]="'modelosA2'" class="dropdown-link">
+                <i class="fas fa-motorcycle"></i>
+                Modelos A2
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a [routerLink]="['/modelos']" [fragment]="'electricas'" class="dropdown-link">
+                <i class="fas fa-bolt"></i>
+                Motocicletas Eléctricas
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a routerLink="/modelos" (click)="closeMenu()" class="dropdown-link">
+                <i class="fas fa-list"></i>
+                Ver Todos los Modelos
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/kcadiz" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Kawasaki Cádiz</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/ksevilla" routerLinkActive="active" class="nav-link" (click)="closeMenu()">Kawasaki Sevilla</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a routerLink="/accesorios" routerLinkActive="active" class="nav-link dropdown-toggle" (click)="closeMenu()">
+            Accesorios y Merchandise
+            <span class="dropdown-arrow">▼</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Green accent lines -->
+  <div class="accent-lines">
+    <div class="accent-line line-1"></div>
+    <div class="accent-line line-2"></div>
+    <div class="accent-line line-3"></div>
+  </div>
+</header>

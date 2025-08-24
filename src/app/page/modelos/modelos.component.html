@@ -1,0 +1,305 @@
+<app-header></app-header>
+
+<main class="modelos-main">
+  <div class="container">
+
+    <!-- Filtros Section -->
+    <section class="filtros-section" *ngIf="datosListos">
+      <div class="filtros-container">
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Buscar modelos..." (input)="buscarModelos($event)">
+        </div>
+        
+        <!-- Filtros por Categoría -->
+        <div class="filter-buttons category-filters">
+          <h4>Por Categoría:</h4>
+          <button class="filter-btn" 
+                  [class.active]="categoriaActiva === 'todos'"
+                  (click)="filtrarPorCategoria('todos')">
+            Todas
+          </button>
+          <button class="filter-btn" 
+                  *ngFor="let categoria of categorias" 
+                  [class.active]="categoriaActiva === categoria.nombre"
+                  (click)="filtrarPorCategoria(categoria.nombre)">
+            {{ categoria.titulo }}
+          </button>
+        </div>
+        
+        <!-- Filtros por Cilindrada -->
+        <div class="filter-buttons cilindrada-filters">
+          <h4>Por Cilindrada:</h4>
+          <button class="filter-btn" 
+                  [class.active]="categoriaActiva === 'todos'"
+                  (click)="filtrarPorCilindrada('todos')">
+            Todas
+          </button>
+          <button class="filter-btn" 
+                  *ngFor="let cilindrada of cilindradasDisponibles" 
+                  (click)="filtrarPorCilindrada(cilindrada)">
+            {{ cilindrada }}
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loading State -->
+    <div class="loading-container" *ngIf="!datosListos">
+      <div class="loading-spinner">
+        <i class="fas fa-motorcycle fa-spin"></i>
+      </div>
+      <p>Cargando modelos...</p>
+    </div>
+
+    <!-- Modelos por Categorías -->
+    <div class="categorias-container" *ngIf="datosListos">
+      
+      <!-- Iterar por cada categoría visible -->
+      <div class="categoria-section" 
+           *ngFor="let categoria of getCategoriasVisibles(); trackBy: trackByCategoria"
+           [id]="categoria.nombre">
+        
+        <!-- Encabezado de la categoría -->
+        <div>
+          <div class="categoria-title">
+            <h2>{{ categoria.titulo }}</h2>
+          </div>
+          <div class="categoria-divider"></div>
+          <br>
+        </div>
+
+        <!-- Grid de modelos de esta categoría -->
+        <section class="modelos-grid">
+          <div class="modelo-card" *ngFor="let modelo of categoria.modelos; trackBy: trackByModelo">
+            
+            <!-- Imagen del modelo -->
+            <div class="modelo-imagen" (click)="abrirModalImagen(modelo)">
+              <img [src]="modelo.colores[modelo.colorActivo || 0].url" 
+                   [alt]="modelo.nombre" 
+                   loading="lazy"
+                   onerror="this.src='assets/img/placeholder-moto.jpg'">
+              
+              <!-- Indicador de zoom -->
+              <div class="zoom-indicator">
+                <i class="fas fa-search-plus"></i>
+              </div>
+              
+              <!-- Badge de cilindrada -->
+              <div class="cilindrada-badge">
+                {{ modelo.cilindrada }}
+              </div>
+
+              <!-- Badges de carnet apto -->
+              <div class="carnet-badges">
+                <div class="carnet-badge" *ngFor="let carnet of modelo.apta">
+                  <img [src]="'assets/img/' + carnet + '.png'" 
+                       [alt]="'Carnet ' + carnet" 
+                       [title]="'Apta para carnet ' + carnet"
+                       loading="lazy">
+                </div>
+              </div>
+
+              <!-- Navegación de colores -->
+              <div class="color-navigation" *ngIf="modelo.colores.length > 1">
+                <button class="nav-arrow nav-arrow-left" 
+                        (click)="colorAnterior(modelo)"
+                        [disabled]="(modelo.colorActivo || 0) === 0">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="color-indicators">
+                  <span class="color-dot" 
+                        *ngFor="let color of modelo.colores; let i = index"
+                        [class.active]="i === (modelo.colorActivo || 0)"
+                        (click)="seleccionarColor(modelo, i)">
+                  </span>
+                </div>
+                
+                <button class="nav-arrow nav-arrow-right" 
+                        (click)="colorSiguiente(modelo)"
+                        [disabled]="(modelo.colorActivo || 0) === modelo.colores.length - 1">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Contenido de la tarjeta -->
+            <div class="modelo-content">
+              
+              <!-- Título y especificaciones -->
+              <div class="modelo-header">
+                <h3 class="modelo-titulo">{{ modelo.nombre }}</h3>
+                <div class="especificaciones">
+                  <div class="spec-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>{{ modelo.potencia }}</span>
+                  </div>
+                  <div class="spec-item">
+                    <i class="fas fa-cog"></i>
+                    <span>{{ modelo.cilindrada }}</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Descripción -->
+              <p class="modelo-descripcion">{{ modelo.descripcion }}</p>
+
+              <!-- Colores disponibles -->
+              <div class="colores-section">
+                <h4>Colores disponibles:</h4>
+                <div class="colores-container">
+                  <div class="color-option" 
+                       *ngFor="let color of modelo.colores; let i = index"
+                       [title]="color.nombre"
+                       (click)="cambiarColor(modelo, i)">
+                    <img [src]="color.url" 
+                         [alt]="color.nombre"
+                         loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Acciones -->
+              <div class="modelo-actions">
+                <a [href]="modelo.enlace" 
+                   target="_blank" 
+                   class="btn-ver-mas">
+                  <i class="fas fa-external-link-alt"></i>
+                  Ver detalles
+                </a>
+                <button class="btn-contacto" (click)="contactarPorModelo(modelo)">
+                  <i class="fas fa-phone"></i>
+                  Contactar
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Sin resultados -->
+    <div class="no-results" *ngIf="datosListos && getCategoriasVisibles().length === 0">
+      <i class="fas fa-search"></i>
+      <h3>No se encontraron modelos</h3>
+      <p>Intenta con otros términos de búsqueda o filtros</p>
+      <button class="btn-reset" (click)="filtrarPorCategoria('todos')">
+        Ver todos los modelos
+      </button>
+    </div>
+
+  </div>
+</main>
+
+<!-- Modal de imagen -->
+<div class="modal-overlay" *ngIf="modalAbierto" (click)="cerrarModalImagen()">
+  <div class="modal-content" (click)="$event.stopPropagation()" *ngIf="modeloSeleccionado">
+    
+    <!-- Botón de cerrar -->
+    <button class="modal-close" (click)="cerrarModalImagen()" aria-label="Cerrar modal">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <!-- Información del modelo -->
+    <div class="modal-header">
+      <h3>{{ modeloSeleccionado.nombre }}</h3>
+      <p>{{ modeloSeleccionado.cilindrada }} - {{ modeloSeleccionado.potencia }}</p>
+    </div>
+
+    <!-- Imagen principal -->
+    <div class="modal-imagen-container">
+      <img [src]="modeloSeleccionado.colores[colorActivoModal].url" 
+           [alt]="modeloSeleccionado.nombre + ' - ' + modeloSeleccionado.colores[colorActivoModal].nombre"
+           class="modal-imagen"
+           loading="lazy">
+      
+      <!-- Navegación de colores si hay más de uno -->
+      <div class="modal-navegacion" *ngIf="modeloSeleccionado.colores.length > 1">
+        <button class="modal-nav-btn modal-nav-prev" 
+                (click)="colorAnteriorModal()"
+                [disabled]="colorActivoModal === 0"
+                aria-label="Color anterior">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <button class="modal-nav-btn modal-nav-next" 
+                (click)="colorSiguienteModal()"
+                [disabled]="colorActivoModal === modeloSeleccionado.colores.length - 1"
+                aria-label="Color siguiente">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Panel de información lateral -->
+    <div class="modal-info-panel">
+      
+      <!-- Información del color actual -->
+      <div class="modal-color-info">
+        <h4>{{ modeloSeleccionado.colores[colorActivoModal].nombre }}</h4>
+        <span class="modal-color-counter" *ngIf="modeloSeleccionado.colores.length > 1">
+          {{ colorActivoModal + 1 }} de {{ modeloSeleccionado.colores.length }}
+        </span>
+      </div>
+
+      <!-- Miniatura de colores -->
+      <div class="modal-colores" *ngIf="modeloSeleccionado.colores.length > 1">
+        <div class="modal-color-option" 
+             *ngFor="let color of modeloSeleccionado.colores; let i = index"
+             [class.active]="i === colorActivoModal"
+             (click)="seleccionarColorModal(i)"
+             [title]="color.nombre">
+          <img [src]="color.url" 
+               [alt]="color.nombre"
+               loading="lazy">
+        </div>
+      </div>
+
+      <!-- Descripción del modelo -->
+      <div class="modal-descripcion" *ngIf="modeloSeleccionado.descripcion">
+        <h4>Descripción</h4>
+        <p>{{ modeloSeleccionado.descripcion }}</p>
+      </div>
+
+      <!-- Especificaciones adicionales -->
+      <div class="modal-especificaciones">
+        <h4>Especificaciones</h4>
+        <div class="spec-list">
+          <div class="spec-item">
+            <i class="fas fa-tachometer-alt"></i>
+            <span>{{ modeloSeleccionado.potencia }}</span>
+          </div>
+          <div class="spec-item">
+            <i class="fas fa-cog"></i>
+            <span>{{ modeloSeleccionado.cilindrada }}</span>
+          </div>
+          <div class="spec-item" *ngIf="modeloSeleccionado.apta?.length">
+            <i class="fas fa-id-card"></i>
+            <span>Apta para carnet: {{ modeloSeleccionado.apta.join(', ') }}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="modal-actions">
+      <a [href]="modeloSeleccionado.enlace" 
+         target="_blank" 
+         class="btn-modal-detalle">
+        <i class="fas fa-external-link-alt"></i>
+        Ver detalles completos
+      </a>
+      <button class="btn-modal-contacto" (click)="contactarPorModelo(modeloSeleccionado)">
+        <i class="fas fa-phone"></i>
+        Contactar
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<app-footer></app-footer>
