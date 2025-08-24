@@ -13,19 +13,19 @@ export class UbicacionesSectionComponent implements OnInit, OnDestroy {
 
   // Carruseles de ubicaciones
   slidesCadiz: string[] = [
-    '/assets/img/BodyHome/puntomotorcadiz/fondo.png',
-    '/assets/img/BodyHome/puntomotorcadiz/IMG_1962-e1639754425333.jpg',
-    '/assets/img/BodyHome/puntomotorcadiz/IMG_4909.jpg',
-    '/assets/img/BodyHome/puntomotorcadiz/6a9d3e5e-7490-4af4-a1cc-0f9f1dca21f8.jpg',
-    '/assets/img/BodyHome/puntomotorcadiz/8aa59de3-4a80-49e1-8442-16b868c676e0.jpg'
+    'assets/img/BodyHome/puntomotorcadiz/fondo.png',
+    'assets/img/BodyHome/puntomotorcadiz/IMG_1962-e1639754425333.jpg',
+    'assets/img/BodyHome/puntomotorcadiz/IMG_4909.jpg',
+    'assets/img/BodyHome/puntomotorcadiz/6a9d3e5e-7490-4af4-a1cc-0f9f1dca21f8.jpg',
+    'assets/img/BodyHome/puntomotorcadiz/8aa59de3-4a80-49e1-8442-16b868c676e0.jpg'
   ];
   
   slidesSevilla: string[] = [
-    '/assets/img/BodyHome/puntomotorsevilla/fachada.jpg',
-    '/assets/img/BodyHome/puntomotorsevilla/fachada-2.jpg',
-    '/assets/img/BodyHome/puntomotorsevilla/concesionario3.jpg',
-    '/assets/img/BodyHome/puntomotorsevilla/taller.jpg',
-    '/assets/img/BodyHome/puntomotorsevilla/IMG_7544.jpg'
+    'assets/img/BodyHome/puntomotorsevilla/fachada.jpg',
+    'assets/img/BodyHome/puntomotorsevilla/fachada-2.jpg',
+    'assets/img/BodyHome/puntomotorsevilla/concesionario3.jpg',
+    'assets/img/BodyHome/puntomotorsevilla/taller.jpg',
+    'assets/img/BodyHome/puntomotorsevilla/IMG_7544.jpg'
   ];
   
   slideActivoCadiz = 0;

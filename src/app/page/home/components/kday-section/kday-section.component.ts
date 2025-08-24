@@ -13,28 +13,28 @@ export class KdaySectionComponent implements OnInit, OnDestroy {
   
   // Carruseles KDay
   slidesKdayCadiz: string[] = [
-    '/assets/img/BodyHome/kdaycadiz/IMG_9302.jpg',
-    '/assets/img/BodyHome/kdaycadiz/IMG_9320.jpg',
-    '/assets/img/BodyHome/kdaycadiz/IMG_9334.jpg',
-    '/assets/img/BodyHome/kdaycadiz/IMG_9345.jpg',
-    '/assets/img/BodyHome/kdaycadiz/IMG_9363.jpg',
-    '/assets/img/BodyHome/kdaycadiz/IMG_9370.jpg',
-    '/assets/img/BodyHome/kdaycadiz/IMG_9390.jpg'
+    'assets/img/BodyHome/kdaycadiz/IMG_9302.jpg',
+    'assets/img/BodyHome/kdaycadiz/IMG_9320.jpg',
+    'assets/img/BodyHome/kdaycadiz/IMG_9334.jpg',
+    'assets/img/BodyHome/kdaycadiz/IMG_9345.jpg',
+    'assets/img/BodyHome/kdaycadiz/IMG_9363.jpg',
+    'assets/img/BodyHome/kdaycadiz/IMG_9370.jpg',
+    'assets/img/BodyHome/kdaycadiz/IMG_9390.jpg'
   ];
   
   slidesKdaySevilla: string[] = [
-    '/assets/img/BodyHome/kdaysevilla/GOPR0722.jpg',
-    '/assets/img/BodyHome/kdaysevilla/IMG_8563.jpg',
-    '/assets/img/BodyHome/kdaysevilla/IMG_8566.jpg',
-    '/assets/img/BodyHome/kdaysevilla/IMG_8568.jpg',
-    '/assets/img/BodyHome/kdaysevilla/IMG_8573.jpg',
-    '/assets/img/BodyHome/kdaysevilla/IMG_8587.jpg',
-    '/assets/img/BodyHome/kdaysevilla/IMG_8590.jpg',
-    '/assets/img/BodyHome/kdaysevilla/IMG_8622.jpg',
-    '/assets/img/BodyHome/kdaysevilla/IMG_8743.jpg',
-    '/assets/img/BodyHome/kdaysevilla/IMG_8744.jpg',
-    '/assets/img/BodyHome/kdaysevilla/IMG_8751.jpg',
-    '/assets/img/BodyHome/kdaysevilla/IMG_8753.jpg'
+    'assets/img/BodyHome/kdaysevilla/GOPR0722.jpg',
+    'assets/img/BodyHome/kdaysevilla/IMG_8563.jpg',
+    'assets/img/BodyHome/kdaysevilla/IMG_8566.jpg',
+    'assets/img/BodyHome/kdaysevilla/IMG_8568.jpg',
+    'assets/img/BodyHome/kdaysevilla/IMG_8573.jpg',
+    'assets/img/BodyHome/kdaysevilla/IMG_8587.jpg',
+    'assets/img/BodyHome/kdaysevilla/IMG_8590.jpg',
+    'assets/img/BodyHome/kdaysevilla/IMG_8622.jpg',
+    'assets/img/BodyHome/kdaysevilla/IMG_8743.jpg',
+    'assets/img/BodyHome/kdaysevilla/IMG_8744.jpg',
+    'assets/img/BodyHome/kdaysevilla/IMG_8751.jpg',
+    'assets/img/BodyHome/kdaysevilla/IMG_8753.jpg'
   ];
   
   slideActivoKdayCadiz = 0;

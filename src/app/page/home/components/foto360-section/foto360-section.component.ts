@@ -20,13 +20,13 @@ export class Foto360SectionComponent implements OnInit, AfterViewInit, OnDestroy
     {
       id: 'cadiz',
       name: 'Cádiz',
-      image: '/assets/img/BodyHome/secction360/cadiz.jpg',
+      image: 'assets/img/BodyHome/secction360/cadiz.jpg',
       description: 'Concesionario Punto Motor Cádiz - Vista 360°'
     },
     {
       id: 'sevilla', 
       name: 'Sevilla',
-      image: '/assets/img/BodyHome/secction360/sevilla.jpg',
+      image: 'assets/img/BodyHome/secction360/sevilla.jpg',
       description: 'Concesionario Punto Motor Sevilla - Vista 360°'
     }
   ];
