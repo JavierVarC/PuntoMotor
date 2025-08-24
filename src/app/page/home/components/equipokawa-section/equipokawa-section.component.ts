@@ -13,42 +13,42 @@ export class EquipokawaSectionComponent implements OnInit, OnDestroy {
   // Imágenes del equipo Kawasaki
   equipoImages = [
     {
-      src: 'assets/img/BodyHome/equipokawa/IMG_4000.jpg',
+      src: 'assets/img/BodyHome/equipokawa/IMG_4000.webp',
       alt: 'Equipo Kawasaki 1',
       caption: 'Nuestro equipo especializado'
     },
     {
-      src: 'assets/img/BodyHome/equipokawa/IMG_4005.jpg',
+      src: 'assets/img/BodyHome/equipokawa/IMG_4005.webp',
       alt: 'Equipo Kawasaki 2',
       caption: 'Profesionales certificados'
     },
     {
-      src: 'assets/img/BodyHome/equipokawa/IMG_6559.jpg',
+      src: 'assets/img/BodyHome/equipokawa/IMG_6559.webp',
       alt: 'Equipo Kawasaki 3',
       caption: 'Trabajando con dedicación'
     },
     {
-      src: 'assets/img/BodyHome/equipokawa/IMG_6798.jpg',
+      src: 'assets/img/BodyHome/equipokawa/IMG_6798.webp',
       alt: 'Equipo Kawasaki 4',
       caption: 'Experiencia y conocimiento'
     },
     {
-      src: 'assets/img/BodyHome/equipokawa/IMG_7539.jpg',
+      src: 'assets/img/BodyHome/equipokawa/IMG_7539.webp',
       alt: 'Equipo Kawasaki 5',
       caption: 'Servicio de calidad'
     },
     {
-      src: 'assets/img/BodyHome/equipokawa/IMG_7601.jpg',
+      src: 'assets/img/BodyHome/equipokawa/IMG_7601.webp',
       alt: 'Equipo Kawasaki 6',
       caption: 'Pasión por las motos'
     },
     {
-      src: 'assets/img/BodyHome/equipokawa/IMG_7625.jpg',
+      src: 'assets/img/BodyHome/equipokawa/IMG_7625.webp',
       alt: 'Equipo Kawasaki 7',
       caption: 'Atención personalizada'
     },
     {
-      src: 'assets/img/BodyHome/equipokawa/WhatsApp-Image-2022-01-12-at-20.27.06.jpeg',
+      src: 'assets/img/BodyHome/equipokawa/WhatsApp-Image-2022-01-12-at-20.27.06.webp',
       alt: 'Equipo Kawasaki 8',
       caption: 'Momento especial del equipo'
     }

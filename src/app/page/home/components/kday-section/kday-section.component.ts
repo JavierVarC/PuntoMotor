@@ -10,31 +10,44 @@ import { Router } from '@angular/router';
   styleUrl: './kday-section.component.css'
 })
 export class KdaySectionComponent implements OnInit, OnDestroy {
+  // Métodos para flechas del carrusel KDay Sevilla
+  prevSlideKdaySevilla(): void {
+    this.slideActivoKdaySevilla = this.slideActivoKdaySevilla > 0 ? this.slideActivoKdaySevilla - 1 : this.slidesKdaySevilla.length - 1;
+  }
+  nextSlideKdaySevilla(): void {
+    this.siguienteSlideKdaySevilla();
+  }
+  // Métodos para flechas del carrusel KDay Cádiz
+  prevSlideKdayCadiz(): void {
+    this.slideActivoKdayCadiz = this.slideActivoKdayCadiz > 0 ? this.slideActivoKdayCadiz - 1 : this.slidesKdayCadiz.length - 1;
+  }
+  nextSlideKdayCadiz(): void {
+    this.siguienteSlideKdayCadiz();
+  }
   
   // Carruseles KDay
   slidesKdayCadiz: string[] = [
-    'assets/img/BodyHome/kdaycadiz/IMG_9302.jpg',
-    'assets/img/BodyHome/kdaycadiz/IMG_9320.jpg',
-    'assets/img/BodyHome/kdaycadiz/IMG_9334.jpg',
-    'assets/img/BodyHome/kdaycadiz/IMG_9345.jpg',
-    'assets/img/BodyHome/kdaycadiz/IMG_9363.jpg',
-    'assets/img/BodyHome/kdaycadiz/IMG_9370.jpg',
-    'assets/img/BodyHome/kdaycadiz/IMG_9390.jpg'
+    'assets/img/BodyHome/kdaycadiz/IMG_9302.webp',
+    'assets/img/BodyHome/kdaycadiz/IMG_9320.webp',
+    'assets/img/BodyHome/kdaycadiz/IMG_9334.webp',
+    'assets/img/BodyHome/kdaycadiz/IMG_9345.webp',
+    'assets/img/BodyHome/kdaycadiz/IMG_9363.webp',
+    'assets/img/BodyHome/kdaycadiz/IMG_9391.webp'
   ];
   
   slidesKdaySevilla: string[] = [
-    'assets/img/BodyHome/kdaysevilla/GOPR0722.jpg',
-    'assets/img/BodyHome/kdaysevilla/IMG_8563.jpg',
-    'assets/img/BodyHome/kdaysevilla/IMG_8566.jpg',
-    'assets/img/BodyHome/kdaysevilla/IMG_8568.jpg',
-    'assets/img/BodyHome/kdaysevilla/IMG_8573.jpg',
-    'assets/img/BodyHome/kdaysevilla/IMG_8587.jpg',
-    'assets/img/BodyHome/kdaysevilla/IMG_8590.jpg',
-    'assets/img/BodyHome/kdaysevilla/IMG_8622.jpg',
-    'assets/img/BodyHome/kdaysevilla/IMG_8743.jpg',
-    'assets/img/BodyHome/kdaysevilla/IMG_8744.jpg',
-    'assets/img/BodyHome/kdaysevilla/IMG_8751.jpg',
-    'assets/img/BodyHome/kdaysevilla/IMG_8753.jpg'
+    'assets/img/BodyHome/kdaysevilla/GOPR0722.webp',
+    'assets/img/BodyHome/kdaysevilla/IMG_8563.webp',
+    'assets/img/BodyHome/kdaysevilla/IMG_8566.webp',
+    'assets/img/BodyHome/kdaysevilla/IMG_8568.webp',
+    'assets/img/BodyHome/kdaysevilla/IMG_8573.webp',
+    'assets/img/BodyHome/kdaysevilla/IMG_8587.webp',
+    'assets/img/BodyHome/kdaysevilla/IMG_8590.webp',
+    'assets/img/BodyHome/kdaysevilla/IMG_8622.webp',
+    'assets/img/BodyHome/kdaysevilla/IMG_8743.webp',
+    'assets/img/BodyHome/kdaysevilla/IMG_8744.webp',
+    'assets/img/BodyHome/kdaysevilla/IMG_8751.webp',
+    'assets/img/BodyHome/kdaysevilla/IMG_8753.webp'
   ];
   
   slideActivoKdayCadiz = 0;

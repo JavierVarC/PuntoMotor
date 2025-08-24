@@ -10,22 +10,36 @@ import { CommonModule } from '@angular/common';
   styleUrl: './ubicaciones-section.component.css'
 })
 export class UbicacionesSectionComponent implements OnInit, OnDestroy {
+  // Métodos para flechas del carrusel Sevilla
+  prevSlideSevilla(): void {
+    this.slideActivoSevilla = this.slideActivoSevilla > 0 ? this.slideActivoSevilla - 1 : this.slidesSevilla.length - 1;
+  }
+  nextSlideSevilla(): void {
+    this.siguienteSlideSevilla();
+  }
+  // Métodos para flechas del carrusel Cádiz
+  prevSlideCadiz(): void {
+    this.slideActivoCadiz = this.slideActivoCadiz > 0 ? this.slideActivoCadiz - 1 : this.slidesCadiz.length - 1;
+  }
+  nextSlideCadiz(): void {
+    this.siguienteSlideCadiz();
+  }
 
   // Carruseles de ubicaciones
   slidesCadiz: string[] = [
-    'assets/img/BodyHome/puntomotorcadiz/fondo.png',
-    'assets/img/BodyHome/puntomotorcadiz/IMG_1962-e1639754425333.jpg',
-    'assets/img/BodyHome/puntomotorcadiz/IMG_4909.jpg',
-    'assets/img/BodyHome/puntomotorcadiz/6a9d3e5e-7490-4af4-a1cc-0f9f1dca21f8.jpg',
-    'assets/img/BodyHome/puntomotorcadiz/8aa59de3-4a80-49e1-8442-16b868c676e0.jpg'
+    'assets/img/BodyHome/puntomotorcadiz/fondo.webp',
+    'assets/img/BodyHome/puntomotorcadiz/IMG_1962-e1639754425333.webp',
+    'assets/img/BodyHome/puntomotorcadiz/IMG_4909.webp',
+    'assets/img/BodyHome/puntomotorcadiz/6a9d3e5e-7490-4af4-a1cc-0f9f1dca21f8.webp',
+    'assets/img/BodyHome/puntomotorcadiz/8aa59de3-4a80-49e1-8442-16b868c676e0.webp'
   ];
   
   slidesSevilla: string[] = [
-    'assets/img/BodyHome/puntomotorsevilla/fachada.jpg',
-    'assets/img/BodyHome/puntomotorsevilla/fachada-2.jpg',
-    'assets/img/BodyHome/puntomotorsevilla/concesionario3.jpg',
-    'assets/img/BodyHome/puntomotorsevilla/taller.jpg',
-    'assets/img/BodyHome/puntomotorsevilla/IMG_7544.jpg'
+    'assets/img/BodyHome/puntomotorsevilla/fachada.webp',
+    'assets/img/BodyHome/puntomotorsevilla/fachada-2.webp',
+    'assets/img/BodyHome/puntomotorsevilla/concesionario3.webp',
+    'assets/img/BodyHome/puntomotorsevilla/taller.webp',
+    'assets/img/BodyHome/puntomotorsevilla/IMG_7544.webp'
   ];
   
   slideActivoCadiz = 0;

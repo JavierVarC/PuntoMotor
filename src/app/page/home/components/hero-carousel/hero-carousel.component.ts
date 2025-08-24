@@ -23,16 +23,16 @@ export class HeroCarouselComponent implements OnInit, OnDestroy {
   
   slides: SlideCarrusel[] = [
     {
-      imagen: 'assets/img/cabeceraHome/header1.png'
+      imagen: 'assets/img/cabeceraHome/header1.webp'
     },
     {
-      imagen: 'assets/img/cabeceraHome/header2.jpg'
+      imagen: 'assets/img/cabeceraHome/header2.webp'
     },
     {
-      imagen: 'assets/img/cabeceraHome/header3.jpg'
+      imagen: 'assets/img/cabeceraHome/header3.webp'
     },
     {
-      imagen: 'assets/img/cabeceraHome/header4.jpg'
+      imagen: 'assets/img/cabeceraHome/header4.webp'
     }
   ];
 

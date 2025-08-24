@@ -33,6 +33,13 @@
                   </div>
                 </div>
               </div>
+              <!-- Flechas navegación -->
+              <button class="carousel-btn carousel-btn-prev" (click)="prevSlideCadiz()" aria-label="Anterior">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-btn carousel-btn-next" (click)="nextSlideCadiz()" aria-label="Siguiente">
+                <i class="fas fa-chevron-right"></i>
+              </button>
             </div>
             <div class="mini-indicators">
               <button *ngFor="let imagen of slidesCadiz; let i = index"
@@ -60,6 +67,13 @@
                   </div>
                 </div>
               </div>
+              <!-- Flechas navegación -->
+              <button class="carousel-btn carousel-btn-prev" (click)="prevSlideSevilla()" aria-label="Anterior">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-btn carousel-btn-next" (click)="nextSlideSevilla()" aria-label="Siguiente">
+                <i class="fas fa-chevron-right"></i>
+              </button>
             </div>
             <div class="mini-indicators">
               <button *ngFor="let imagen of slidesSevilla; let i = index"

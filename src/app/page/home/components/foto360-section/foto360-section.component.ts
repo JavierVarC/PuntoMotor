@@ -20,20 +20,20 @@ export class Foto360SectionComponent implements OnInit, AfterViewInit, OnDestroy
     {
       id: 'cadiz',
       name: 'Cádiz',
-      image: 'assets/img/BodyHome/secction360/cadiz.jpg',
+      image: 'assets/img/BodyHome/secction360/cadiz.webp',
       description: 'Concesionario Punto Motor Cádiz - Vista 360°'
     },
     {
       id: 'sevilla', 
       name: 'Sevilla',
-      image: 'assets/img/BodyHome/secction360/sevilla.jpg',
+      image: 'assets/img/BodyHome/secction360/sevilla.webp',
       description: 'Concesionario Punto Motor Sevilla - Vista 360°'
     }
   ];
 
   currentLocationIndex = 0;
   currentLocation = this.panoramaLocations[0];
-  logo360 = '/assets/img/360.png';
+  logo360 = 'assets/img/360.png';
   
   // Estados del visor
   isLoading = true;
