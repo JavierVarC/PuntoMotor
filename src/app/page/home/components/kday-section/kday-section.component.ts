@@ -59,8 +59,7 @@ export class KdaySectionComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     console.log('KdaySectionComponent inicializado');
-    this.iniciarCarruselKdayCadiz();
-    this.iniciarCarruselKdaySevilla();
+  // Carruseles manuales, sin transición automática
   }
 
   ngOnDestroy(): void {
@@ -74,9 +73,7 @@ export class KdaySectionComponent implements OnInit, OnDestroy {
 
   // KDay Cádiz
   iniciarCarruselKdayCadiz(): void {
-    this.intervalIdKdayCadiz = setInterval(() => {
-      this.siguienteSlideKdayCadiz();
-    }, 9000);
+  // Eliminado: transición automática
   }
 
   siguienteSlideKdayCadiz(): void {
@@ -95,9 +92,7 @@ export class KdaySectionComponent implements OnInit, OnDestroy {
 
   // KDay Sevilla
   iniciarCarruselKdaySevilla(): void {
-    this.intervalIdKdaySevilla = setInterval(() => {
-      this.siguienteSlideKdaySevilla();
-    }, 10000);
+  // Eliminado: transición automática
   }
 
   siguienteSlideKdaySevilla(): void {

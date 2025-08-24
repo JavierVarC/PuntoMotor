@@ -51,8 +51,7 @@ export class UbicacionesSectionComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     console.log('UbicacionesSection inicializado');
-    this.iniciarCarruselCadiz();
-    this.iniciarCarruselSevilla();
+  // Carruseles manuales, sin transición automática
   }
 
   ngOnDestroy(): void {
@@ -66,9 +65,7 @@ export class UbicacionesSectionComponent implements OnInit, OnDestroy {
 
   // Métodos para carrusel de Cádiz
   iniciarCarruselCadiz(): void {
-    this.intervalIdCadiz = setInterval(() => {
-      this.siguienteSlideCadiz();
-    }, 7000);
+  // Eliminado: transición automática
   }
 
   siguienteSlideCadiz(): void {
@@ -87,9 +84,7 @@ export class UbicacionesSectionComponent implements OnInit, OnDestroy {
 
   // Métodos para carrusel de Sevilla
   iniciarCarruselSevilla(): void {
-    this.intervalIdSevilla = setInterval(() => {
-      this.siguienteSlideSevilla();
-    }, 8000);
+  // Eliminado: transición automática
   }
 
   siguienteSlideSevilla(): void {

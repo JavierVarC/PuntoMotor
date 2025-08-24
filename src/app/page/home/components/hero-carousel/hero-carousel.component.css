@@ -18,7 +18,7 @@
   display: flex;
   width: 400%; /* 4 slides * 100% */
   height: 100%;
-  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
   will-change: transform;
   transform: translate3d(0, 0, 0); /* Forzar aceleración hardware */
 }
@@ -42,12 +42,12 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: transform 0.8s ease;
+  transition: transform 0.4s ease;
   z-index: 1;
 }
 
 .carousel-slide.active .slide-background {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .slide-overlay {
@@ -74,7 +74,7 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 6px;
   z-index: 100;
 }
 

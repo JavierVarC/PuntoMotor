@@ -39,8 +39,8 @@
 .logo-360-inline {
   width: 50px;
   height: 50px;
-  filter: drop-shadow(0 0 10px rgba(0, 255, 0, 0.5));
-  animation: rotate 3s linear infinite;
+  filter: drop-shadow(0 0 5px rgba(0,255,0,0.22));
+  animation: rotate 2s linear infinite;
 }
 
 @keyframes rotate {
@@ -63,7 +63,7 @@
   color: white;
   border-radius: 25px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.18s ease;
   font-weight: 600;
   font-size: 1rem;
 }
@@ -73,7 +73,7 @@
   border-color: #00ff00;
   background: rgba(0, 255, 0, 0.1);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 255, 0, 0.3);
+  box-shadow: 0 3px 8px rgba(0,255,0,0.13);
 }
 
 /* Contenedor de Photo Sphere Viewer */

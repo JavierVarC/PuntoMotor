@@ -1,8 +1,8 @@
 <section class="equipokawa-section">
   <div class="equipokawa-container">
     <div class="equipokawa-header">
-      <img src="assets/img/PuntoMotor.png" alt="Punto Motor" class="punto-motor-logo">
-      <h2>Nuestro Equipo <img src="assets/img/kawasaki.png" alt="Kawasaki" class="kawasaki-logo-inline"></h2>
+  <img src="assets/img/PuntoMotor.png" alt="Punto Motor" class="punto-motor-logo" loading="lazy">
+  <h2>Nuestro Equipo <img src="assets/img/kawasaki.png" alt="Kawasaki" class="kawasaki-logo-inline" loading="lazy"></h2>
     </div>
     
     <div class="carousel-container" 
@@ -15,10 +15,10 @@
           <div class="carousel-slide" 
                *ngFor="let image of equipoImages; let i = index"
                [class.active]="i === currentImageIndex">
-            <img [src]="image.src" 
-                 [alt]="image.alt"
-                 loading="lazy"
-                 (error)="onImageError($event)">
+      <img [src]="image.src" 
+        [alt]="image.alt"
+        loading="lazy"
+        (error)="onImageError($event)">
             <div class="image-overlay">
               <div class="image-caption">
                 <h3>{{ image.caption }}</h3>

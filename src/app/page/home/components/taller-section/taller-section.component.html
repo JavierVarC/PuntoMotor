@@ -7,17 +7,17 @@
       
       <!-- Celda 1 (Arriba Izquierda): Logo del taller -->
       <div class="taller-grid-item taller-logo-cell">
-        <img src="assets/img/taller.png" alt="Taller Kawasaki" class="taller-main-logo">
+  <img src="assets/img/taller.png" alt="Taller Kawasaki" class="taller-main-logo" loading="lazy">
       </div>
 
       <!-- Celda 2 (Arriba Derecha): Video del Taller Kawasaki -->
       <div class="taller-grid-item video-cell">
         <div class="video-card" (click)="abrirVideo(tallerVideos[0].url)">
           <div class="video-thumbnail">
-            <img [src]="'https://img.youtube.com/vi/' + tallerVideos[0].id + '/hqdefault.jpg'" 
-                 [alt]="tallerVideos[0].title"
-                 loading="lazy"
-                 (error)="onImageError($event)">
+      <img [src]="'https://img.youtube.com/vi/' + tallerVideos[0].id + '/hqdefault.jpg'" 
+        [alt]="tallerVideos[0].title"
+        loading="lazy"
+        (error)="onImageError($event)">
             
             <div class="video-play-overlay">
               <div class="play-button">
@@ -37,10 +37,10 @@
       <div class="taller-grid-item video-cell">
         <div class="video-card" (click)="abrirVideo(tallerVideos[1].url)">
           <div class="video-thumbnail">
-            <img [src]="'https://img.youtube.com/vi/' + tallerVideos[1].id + '/hqdefault.jpg'" 
-                 [alt]="tallerVideos[1].title"
-                 loading="lazy"
-                 (error)="onImageError($event)">
+      <img [src]="'https://img.youtube.com/vi/' + tallerVideos[1].id + '/hqdefault.jpg'" 
+        [alt]="tallerVideos[1].title"
+        loading="lazy"
+        (error)="onImageError($event)">
             
             <div class="video-play-overlay">
               <div class="play-button">
@@ -60,10 +60,10 @@
       <div class="taller-grid-item video-cell">
         <div class="video-card" (click)="abrirVideo(tallerVideos[2].url)">
           <div class="video-thumbnail">
-            <img [src]="'https://img.youtube.com/vi/' + tallerVideos[2].id + '/hqdefault.jpg'" 
-                 [alt]="tallerVideos[2].title"
-                 loading="lazy"
-                 (error)="onImageError($event)">
+      <img [src]="'https://img.youtube.com/vi/' + tallerVideos[2].id + '/hqdefault.jpg'" 
+        [alt]="tallerVideos[2].title"
+        loading="lazy"
+        (error)="onImageError($event)">
             
             <div class="video-play-overlay">
               <div class="play-button">

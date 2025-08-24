@@ -61,12 +61,9 @@ export class EquipokawaSectionComponent implements OnInit, OnDestroy {
   private readonly AUTO_PLAY_INTERVAL = 5000;
 
   ngOnInit(): void {
-    // Precargar las primeras imágenes
-    this.preloadImages();
-    // Iniciar el carrusel después de un breve delay
-    setTimeout(() => {
-      this.startCarousel();
-    }, 1000);
+  // Precargar las primeras imágenes
+  this.preloadImages();
+  // Carrusel manual, sin autoplay
   }
 
   ngOnDestroy(): void {
@@ -136,11 +133,11 @@ export class EquipokawaSectionComponent implements OnInit, OnDestroy {
   }
 
   onMouseEnter(): void {
-    this.stopCarousel();
+  // Autoplay desactivado
   }
 
   onMouseLeave(): void {
-    this.startCarousel();
+  // Autoplay desactivado
   }
 
   // Manejar errores de carga de imagen

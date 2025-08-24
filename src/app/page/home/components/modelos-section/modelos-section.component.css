@@ -61,8 +61,8 @@
   background: white;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.18s ease;
   cursor: pointer;
   width: 350px;
   flex-shrink: 0;
@@ -70,7 +70,7 @@
 
 .video-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.13);
 }
 
 .video-thumbnail {
@@ -111,7 +111,7 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: rgba(124, 179, 66, 0.9);
+  background: rgba(124,179,66,0.7);
   display: flex;
   align-items: center;
   justify-content: center;

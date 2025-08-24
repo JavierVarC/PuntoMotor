@@ -11,7 +11,7 @@
   border-radius: 50%;
   cursor: pointer;
   z-index: 10;
-  transition: all 0.3s ease;
+  transition: all 0.18s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
 .carousel-btn:hover {
   background: rgba(124, 179, 66, 1);
   transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 5px 15px rgba(124, 179, 66, 0.4);
+  box-shadow: 0 1px 3px rgba(124,179,66,0.13);
 }
 .carousel-btn-prev {
   left: 20px;
@@ -73,7 +73,7 @@
   color: #ffffff;
   margin-bottom: 20px;
   line-height: 1.2;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.22);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,22 +84,12 @@
 .kday-logo-inline {
   height: clamp(100px, 10vw, 150px);
   width: auto;
-  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
-  transition: all 0.3s ease;
+  filter: none;
+  transition: all 0.18s ease;
   vertical-align: middle;
-  animation: pulse 2s ease-in-out infinite;
+  /* animation: pulse 2s ease-in-out infinite; */
 }
 
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
-  }
-  50% {
-    transform: scale(1.05);
-    filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.4));
-  }
-}
 
 .kday-logo-inline:hover {
   transform: scale(1.1);
@@ -230,14 +220,14 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.3);
+  backdrop-filter: none;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.15);
 }
 
 .nav-btn:hover {
   background: linear-gradient(135deg, #ff6b35, #ff8a50);
   transform: scale(1.1);
-  box-shadow: 0 12px 35px rgba(255, 107, 53, 0.5);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.2);
 }
 
 /* Indicadores mejorados */
@@ -279,14 +269,14 @@
   background: #ffffff;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease;
   border: 1px solid #f0f0f0;
 }
 
 .kday-gallery-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 /* Responsive KDay */
