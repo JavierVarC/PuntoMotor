@@ -1,4 +1,5 @@
 export default interface Modelos {
+  agnio: number;
   categoria: string;
   apta: string[];
   nombre: string;
