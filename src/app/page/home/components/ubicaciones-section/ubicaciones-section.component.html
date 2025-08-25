@@ -29,7 +29,8 @@
                    [style.transform]="'translateX(-' + (slideActivoCadiz * 20) + '%)'">
                 <div class="mini-slide" *ngFor="let imagen of slidesCadiz; let i = index">
                   <div class="mini-slide-image" 
-                       [style.background-image]="'url(' + imagen + ')'">
+           [style.background-image]="'url(' + imagen + ')'">
+         <img [src]="imagen" loading="lazy" style="display:none;">
                   </div>
                 </div>
               </div>
@@ -63,7 +64,8 @@
                    [style.transform]="'translateX(-' + (slideActivoSevilla * 20) + '%)'">
                 <div class="mini-slide" *ngFor="let imagen of slidesSevilla; let i = index">
                   <div class="mini-slide-image" 
-                       [style.background-image]="'url(' + imagen + ')'">
+           [style.background-image]="'url(' + imagen + ')'">
+         <img [src]="imagen" loading="lazy" style="display:none;">
                   </div>
                 </div>
               </div>
