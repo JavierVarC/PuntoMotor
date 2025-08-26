@@ -1,3 +1,212 @@
+/* Facebook Modal Styles */
+.facebook-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+.facebook-modal-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+/* Instagram Modal Styles - usando las mismas clases que Facebook */
+.instagram-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.instagram-option {
+  display: block;
+  margin: 12px auto;
+  padding: 8px 0;
+  width: 80%;
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #fff;
+  border: 2px solid #e6683c;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 16px rgba(230,104,60,0.12);
+}
+
+.instagram-option:hover {
+  background: linear-gradient(135deg, #bc1888 0%, #f09433 100%);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(230,104,60,0.18);
+}
+
+.instagram-option i {
+  font-size: 1.25em;
+  color: #fff;
+  background: #e6683c;
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px solid #e6683c;
+  box-shadow: 0 2px 8px rgba(230,104,60,0.18);
+}
+
+/* Email Modal Styles */
+.email-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.email-option {
+  display: block;
+  margin: 12px auto;
+  padding: 8px 0;
+  width: 80%;
+  background: linear-gradient(135deg, #ea4335 60%, #d33b2c 100%);
+  color: #fff;
+  border: 2px solid #ea4335;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 16px rgba(234,67,53,0.12);
+}
+
+.email-option:hover {
+  background: linear-gradient(135deg, #d33b2c 0%, #ea4335 100%);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(234,67,53,0.18);
+}
+
+.email-option i {
+  font-size: 1.25em;
+  color: #fff;
+  background: #ea4335;
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px solid #ea4335;
+  box-shadow: 0 2px 8px rgba(234,67,53,0.18);
+}
+.facebook-modal-content {
+  position: relative;
+  z-index: 2;
+  background: #232323;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  border: 1px solid #333;
+  padding: 32px 24px 24px 24px;
+  min-width: 280px;
+  max-width: 90vw;
+  text-align: center;
+  animation: modalFadeIn 0.25s;
+}
+.facebook-modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #e0e0e0;
+  font-size: 1.2rem;
+}
+.facebook-option {
+  display: block;
+  margin: 12px auto;
+  padding: 8px 0;
+  width: 80%;
+  background: linear-gradient(135deg, #1877f2 60%, #3b5998 100%);
+  color: #fff;
+  border: 2px solid #1877f2;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 16px rgba(24,119,242,0.12);
+}
+
+.facebook-option i {
+  font-size: 1.25em;
+  color: #fff;
+  background: #1877f2;
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px solid #1877f2;
+  box-shadow: 0 2px 8px rgba(24,119,242,0.18);
+}
+
+.facebook-option:hover {
+  background: linear-gradient(135deg, #3b5998 0%, #1877f2 100%);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(24,119,242,0.18);
+}
+.close-modal {
+  margin-top: 18px;
+  padding: 8px 24px;
+  background: #444;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.close-modal:hover {
+  background: #232323;
+}
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 900px) {
+  .dropdown-menu {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    min-width: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    z-index: auto !important;
+    backdrop-filter: none !important;
+  }
+}
 .header {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   color: white;
@@ -243,6 +452,11 @@
   color: white;
 }
 
+.social-link.email {
+  background: linear-gradient(135deg, #ea4335, #d33b2c);
+  color: white;
+}
+
 .social-link:hover {
   transform: translateY(-3px) scale(1.1);
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
@@ -397,6 +611,8 @@
   .nav-menu.active {
     display: block;
     animation: slideDown 0.3s ease;
+    max-height: 100vh;
+    overflow-y: auto;
   }
   
   @keyframes slideDown {

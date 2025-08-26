@@ -22,15 +22,15 @@
         <h3>PUNTO MOTOR CÁDIZ</h3>
         <div class="contact-item">
           <i class="fas fa-map-marker-alt"></i>
-          <span>C. Villa de Rota, 11011 Cádiz</span>
+          <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd0dd24c22afac9b:0x799bd8a7a5ae4a49?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noopener" class="contact-link">C. Villa de Rota, 11011 Cádiz</a>
         </div>
         <div class="contact-item">
           <i class="fas fa-phone"></i>
-          <span>956 200 015</span>
+          <a href="tel:+34956200015" class="contact-link">956 200 015</a>
         </div>
         <div class="contact-item">
           <i class="fas fa-envelope"></i>
-          <span>kawasakicadiz&#64;gmail.com</span>
+          <a href="mailto:kawasakicadiz@gmail.com" class="contact-link">kawasakicadiz@gmail.com</a>
         </div>
       </div>
 
@@ -39,15 +39,15 @@
         <h3>PUNTO MOTOR SEVILLA</h3>
         <div class="contact-item">
           <i class="fas fa-map-marker-alt"></i>
-          <span>C. Pagés, 32, 41016 Sevilla</span>
+          <a href="https://www.google.com/maps?ll=37.381818,-5.932997&z=16&t=m&hl=es&gl=US&mapclient=embed&q=C.+Papiro,+32+41016+Sevilla" target="_blank" rel="noopener" class="contact-link">C. Papiro, 32, 41016 Sevilla</a>
         </div>
         <div class="contact-item">
           <i class="fas fa-phone"></i>
-          <span>954 53 90 67</span>
+          <a href="tel:+34954539067" class="contact-link">954 53 90 67</a>
         </div>
         <div class="contact-item">
           <i class="fas fa-envelope"></i>
-          <span>kawasakisevilla&#64;gmail.com</span>
+          <a href="mailto:kawasakisevilla@gmail.com" class="contact-link">kawasakisevilla@gmail.com</a>
         </div>
       </div>
     </div>
@@ -58,18 +58,42 @@
       
       <!-- Social Icons -->
       <div class="social-icons">
-        <a href="#" class="social-link facebook" aria-label="Facebook">
+        <a href="#" class="social-link facebook" aria-label="Facebook" (click)="showFacebookModal = true; $event.preventDefault();">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="#" class="social-link instagram" aria-label="Instagram">
+        <div class="facebook-modal" *ngIf="showFacebookModal">
+          <div class="facebook-modal-backdrop" (click)="showFacebookModal = false"></div>
+          <div class="facebook-modal-content">
+            <a href="https://www.facebook.com/PuntoMotorCadiz/" target="_blank" rel="noopener" class="facebook-option"><i class="fab fa-facebook-f" style="margin-right:8px;"></i>PuntoMotor Cádiz</a>
+            <a href="https://www.facebook.com/profile.php?id=100071592253047" target="_blank" rel="noopener" class="facebook-option"><i class="fab fa-facebook-f" style="margin-right:8px;"></i>PuntoMotor Sevilla</a>
+            <button (click)="showFacebookModal = false" class="close-modal">Cerrar</button>
+          </div>
+        </div>
+        <a href="#" class="social-link instagram" aria-label="Instagram" (click)="showInstagramModal = true; $event.preventDefault();">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="#" class="social-link youtube" aria-label="YouTube">
+        <div class="instagram-modal" *ngIf="showInstagramModal">
+          <div class="facebook-modal-backdrop" (click)="showInstagramModal = false"></div>
+          <div class="facebook-modal-content">
+            <a href="https://instagram.com/puntomotor_cadiz" target="_blank" rel="noopener" class="instagram-option"><i class="fab fa-instagram" style="margin-right:8px;"></i>PuntoMotor Cádiz</a>
+            <a href="https://instagram.com/puntomotor_sevilla" target="_blank" rel="noopener" class="instagram-option"><i class="fab fa-instagram" style="margin-right:8px;"></i>PuntoMotor Sevilla</a>
+            <button (click)="showInstagramModal = false" class="close-modal">Cerrar</button>
+          </div>
+        </div>
+        <a href="https://www.youtube.com/@puntomotor7301" target="_blank" rel="noopener" class="social-link youtube" aria-label="YouTube">
           <i class="fab fa-youtube"></i>
         </a>
-        <a href="#" class="social-link tiktok" aria-label="TikTok">
-          <i class="fab fa-tiktok"></i>
+        <a href="#" class="social-link email" aria-label="Email" (click)="showEmailModal = true; $event.preventDefault();">
+          <i class="fa-solid fa-envelope"></i>
         </a>
+        <div class="email-modal" *ngIf="showEmailModal">
+          <div class="facebook-modal-backdrop" (click)="showEmailModal = false"></div>
+          <div class="facebook-modal-content">
+            <a href="mailto:kawasakicadiz@gmail.com" target="_blank" rel="noopener" class="email-option"><i class="fa-solid fa-envelope" style="margin-right:8px;"></i>Kawasaki Cádiz</a>
+            <a href="mailto:kawasakisevilla@gmail.com" target="_blank" rel="noopener" class="email-option"><i class="fa-solid fa-envelope" style="margin-right:8px;"></i>Kawasaki Sevilla</a>
+            <button (click)="showEmailModal = false" class="close-modal">Cerrar</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -1,3 +1,57 @@
 <app-header></app-header>
-<p>accesorios works!</p>
+<section class="accesorios-section">
+
+	<!-- Sección de Accesorios -->
+	<div id="accesorios" class="logo-header">
+		<img src="assets/img/accesorios.webp" alt="Logo Accesorios" class="logo-accesorios">
+	</div>
+	<div class="accesorios-grid">
+			<div class="accesorio-card" *ngFor="let acc of accesorios; let i = index">
+				<div class="accesorio-carrusel">
+					<button class="carrusel-btn carrusel-btn-prev" (click)="acc.imgIndex = acc.imgIndex > 0 ? acc.imgIndex - 1 : acc.imgs.length - 1" *ngIf="acc.imgs.length > 1" aria-label="Anterior">
+						<i class="fas fa-chevron-left"></i>
+					</button>
+					<img [src]="acc.imgs[acc.imgIndex || 0]?.url" [alt]="acc.nombre" loading="lazy" class="accesorio-img">
+					<button class="carrusel-btn carrusel-btn-next" (click)="acc.imgIndex = acc.imgIndex < acc.imgs.length - 1 ? acc.imgIndex + 1 : 0" *ngIf="acc.imgs.length > 1" aria-label="Siguiente">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+					<div class="carrusel-indicators" *ngIf="acc.imgs.length > 1">
+						<button *ngFor="let img of acc.imgs; let j = index" class="indicator" [class.active]="(acc.imgIndex || 0) === j" (click)="acc.imgIndex = j" aria-label="Ir a imagen {{j+1}}"></button>
+					</div>
+				</div>
+				<div class="accesorio-info">
+					<h3 class="accesorio-nombre">{{ acc.nombre }}</h3>
+					<p class="accesorio-descripcion">{{ acc.descripcion }}</p>
+					  <a class="accesorio-btn" [href]="acc.enlace" target="_blank">Más Detalles...</a>
+				</div>
+			</div>
+	</div>
+
+	<!-- Sección de Merchandise -->
+	<div id="merchandise" class="logo-header">
+		<img src="assets/img/merchandise.webp" alt="Logo Merchandise" class="logo-accesorios">
+	</div>
+	<div class="accesorios-grid">
+			<div class="accesorio-card" *ngFor="let acc of merchandise; let i = index">
+				<div class="accesorio-carrusel">
+					<button class="carrusel-btn carrusel-btn-prev" (click)="acc.imgIndex = acc.imgIndex > 0 ? acc.imgIndex - 1 : acc.imgs.length - 1" *ngIf="acc.imgs.length > 1" aria-label="Anterior">
+						<i class="fas fa-chevron-left"></i>
+					</button>
+					<img [src]="acc.imgs[acc.imgIndex || 0]?.url" [alt]="acc.nombre" loading="lazy" class="accesorio-img">
+					<button class="carrusel-btn carrusel-btn-next" (click)="acc.imgIndex = acc.imgIndex < acc.imgs.length - 1 ? acc.imgIndex + 1 : 0" *ngIf="acc.imgs.length > 1" aria-label="Siguiente">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+					<div class="carrusel-indicators" *ngIf="acc.imgs.length > 1">
+						<button *ngFor="let img of acc.imgs; let j = index" class="indicator" [class.active]="(acc.imgIndex || 0) === j" (click)="acc.imgIndex = j" aria-label="Ir a imagen {{j+1}}"></button>
+					</div>
+				</div>
+				<div class="accesorio-info">
+					<h3 class="accesorio-nombre">{{ acc.nombre }}</h3>
+					<p class="accesorio-descripcion">{{ acc.descripcion }}</p>
+					  <a class="accesorio-btn" [href]="acc.enlace" target="_blank">Más Detalles...</a>
+				</div>
+			</div>
+	</div>
+	
+</section>
 <app-footer></app-footer>
