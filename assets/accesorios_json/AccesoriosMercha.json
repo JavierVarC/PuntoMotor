@@ -146,26 +146,6 @@
       "enlace": "https://www.kawasaki.es/es/accessories/audio_and_electrics/Ninja_400/2020?UidCat=01FCWUYNG0UtOw&UidSubCat=0543WlhZXFhaWllYWFlYWVhcW1pZRg0bRS07&CodeBaseInternal=0178LTBcWFgv&Uid_Model=0976Xw4LXl9ZDAkLDQwJXApfDVEJUAsJXlgKXVhRCVkJWF0&Uid=093BXgxbWgsMCQ0LWA1eXApZClAMCltYUFFYWVwMWF0LCQw",
       "precioAntes": "",
       "precioAhora": ""
-    },
-    {
-      "agnio": 2025,
-      "nombre": "Asiento bajo",
-      "descripcion": "El asiento del piloto es 20 mm más bajo y más estrecho que la estándar, proporcionando una posición más segura.",
-      "referencia": "",
-      "imgs": [
-            {
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/accessories/999941578_LowSeat_Std-Seat_25KLZ1100C_40RGY2FOSE3CG_A.jpg"
-            },
-            {
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/accessories/999941143.jpg"
-            },
-            {
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_BK1_STU%20(1).003.png"
-            }
-        ],
-      "enlace": "https://www.kawasaki.es/es/accessories/seats___backrests/Versys_1000/2022?UidCat=01FCWUYNG0UtOw&UidSubCat=0625WlhZXFhaWllYWFtQW1BeUFxZWVhcWEYNG0UtOw&CodeBaseInternal=01B2IyQyWVhYWA&Uid_Model=095AUV8NDQxRDVsNDQsOXAkMXVFYWFldCVtaXQteDA1bDV4&Uid=089AXF1dXwteW1hYW1xRXAxeDQkLC1wNUA5dXVFcCl5ZDQs",
-      "precioAntes": "",
-      "precioAhora": ""
     }
   ],
   "merchandise": [
@@ -306,20 +286,6 @@
             }
         ],
       "enlace": "https://www.kawasaki.es/es/accessories/Merchandise/BAGS/Mochila_para_todo_tipo_de_clima?UidCat=01FEW0YNG0UtOw&UidSubCat=0631WlhZXFhaWllYWF1cXVxRUFlZUVFZWkYNG0UtOw&Uid=0809DV4JWV9ZXFBbXAoNXF5aXVBeX1xfXFBbC15RCVsJWgk",
-      "precioAntes": "",
-      "precioAhora": ""
-    },
-    {
-      "agnio": 2025,
-      "nombre": "GAFAS DE SOL CAMALEÓN KAWASAKI",
-      "descripcion": "Con lentes de protección UV, estas gafas de sol negras ofrecen dos estilos en uno. La montura en nylon negro contrasta con inserciones verdes y el logo blanco de Kawasaki en las patillas.",
-      "referencia": "",
-      "imgs": [
-            {
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/accessories/225SPM0030-Sport03-S_001.jpg"
-            }
-        ],
-      "enlace": "https://www.kawasaki.es/es/accessories/Merchandise/SUNGLASSES/GAFAS_DE_SOL_CAMALE%C3%93N_KAWASAKI_?UidCat=01FEW0YNG0UtOw&UidSubCat=061CWlhZXFhaWllYWF1cXVxbWFxaWFhZUUYNG0UtOw&Uid=0805X1lfDFpYXFtaDlhaXFxfDlBcDQpfW1gNUFpeXV8MXAw",
       "precioAntes": "",
       "precioAhora": ""
     },
