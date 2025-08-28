@@ -80,8 +80,43 @@
               </a>
             </li>
             <li class="dropdown-item">
-              <a routerLink="/modelos" (click)="closeMenu()" class="dropdown-link">
-                Ver Todos los Modelos
+              <a [routerLink]="['/modelos']" [fragment]="'hypersport'" class="dropdown-link" (click)="closeMenu()">
+                Hypersport
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a [routerLink]="['/modelos']" [fragment]="'supersport'" class="dropdown-link" (click)="closeMenu()">
+                Supersport
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a [routerLink]="['/modelos']" [fragment]="'supernaked'" class="dropdown-link" (click)="closeMenu()">
+                Supernaked
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a [routerLink]="['/modelos']" [fragment]="'adventure_tourer'" class="dropdown-link" (click)="closeMenu()">
+                Adventure Tourer
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a [routerLink]="['/modelos']" [fragment]="'sport_tourer'" class="dropdown-link" (click)="closeMenu()">
+                Sport Tourer
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a [routerLink]="['/modelos']" [fragment]="'modern_classic'" class="dropdown-link" (click)="closeMenu()">
+                Modern Classic
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a [routerLink]="['/modelos']" [fragment]="'cruiser'" class="dropdown-link" (click)="closeMenu()">
+                Cruiser
+              </a>
+            </li>
+            <li class="dropdown-item">
+              <a [routerLink]="['/modelos']" [fragment]="'modelosA2'" class="dropdown-link" (click)="closeMenu()">
+                Ver Todos Los Modelos
               </a>
             </li>
           </ul>

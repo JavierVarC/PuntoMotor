@@ -6,41 +6,42 @@
     <!-- Filtros Section -->
     <section class="filtros-section" *ngIf="datosListos">
       <div class="filtros-container">
-        <div class="search-box">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="Buscar modelos..." (input)="buscarModelos($event)">
+        
+        <!-- Fila principal con buscador y filtros -->
+        <div class="search-filters-row">
+          <!-- Buscador -->
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Buscar modelos..." (input)="buscarModelos($event)">
+          </div>
+          
+          <!-- Filtros compactos -->
+          <!-- 
+          <div class="compact-filters">
+            FILTROS POR CATEGORIAS
+            <div class="filter-group">
+              <label class="filter-label">Categoría:</label>
+              <select class="filter-select" [(ngModel)]="categoriaActiva" (change)="filtrarPorCategoria(categoriaActiva)">
+                <option value="todos">Todas</option>
+                <option *ngFor="let categoria of categorias" [value]="categoria.nombre">
+                  {{ categoria.titulo }}
+                </option>
+              </select>
+            </div>
+            FILTROS POR CILINDRADA
+            <div class="filter-group">
+              <label class="filter-label">Cilindrada:</label>
+              <select class="filter-select" [(ngModel)]="cilindradaActiva" (change)="filtrarPorCilindrada($event)">
+                <option value="todos">Todas</option>
+                <option *ngFor="let cilindrada of cilindradasDisponibles" [value]="cilindrada">
+                  {{ cilindrada }}
+                </option>
+              </select>
+            </div>
+          </div>
+          -->
         </div>
         
-        <!-- Filtros por Categoría -->
-        <div class="filter-buttons category-filters">
-          <h4>Por Categoría:</h4>
-          <button class="filter-btn" 
-                  [class.active]="categoriaActiva === 'todos'"
-                  (click)="filtrarPorCategoria('todos')">
-            Todas
-          </button>
-          <button class="filter-btn" 
-                  *ngFor="let categoria of categorias" 
-                  [class.active]="categoriaActiva === categoria.nombre"
-                  (click)="filtrarPorCategoria(categoria.nombre)">
-            {{ categoria.titulo }}
-          </button>
-        </div>
-        
-        <!-- Filtros por Cilindrada -->
-        <div class="filter-buttons cilindrada-filters">
-          <h4>Por Cilindrada:</h4>
-          <button class="filter-btn" 
-                  [class.active]="categoriaActiva === 'todos'"
-                  (click)="filtrarPorCilindrada('todos')">
-            Todas
-          </button>
-          <button class="filter-btn" 
-                  *ngFor="let cilindrada of cilindradasDisponibles" 
-                  (click)="filtrarPorCilindrada(cilindrada)">
-            {{ cilindrada }}
-          </button>
-        </div>
       </div>
     </section>
 
@@ -103,7 +104,7 @@
               <!-- Navegación de colores -->
               <div class="color-navigation" *ngIf="modelo.colores.length > 1">
                 <button class="nav-arrow nav-arrow-left" 
-                        (click)="colorAnterior(modelo)"
+                        (click)="colorAnterior(modelo); $event.stopPropagation()"
                         [disabled]="(modelo.colorActivo || 0) === 0">
                   <i class="fas fa-chevron-left"></i>
                 </button>
@@ -112,12 +113,12 @@
                   <span class="color-dot" 
                         *ngFor="let color of modelo.colores; let i = index"
                         [class.active]="i === (modelo.colorActivo || 0)"
-                        (click)="seleccionarColor(modelo, i)">
+                        (click)="seleccionarColor(modelo, i); $event.stopPropagation()">
                   </span>
                 </div>
                 
                 <button class="nav-arrow nav-arrow-right" 
-                        (click)="colorSiguiente(modelo)"
+                        (click)="colorSiguiente(modelo); $event.stopPropagation()"
                         [disabled]="(modelo.colorActivo || 0) === modelo.colores.length - 1">
                   <i class="fas fa-chevron-right"></i>
                 </button>

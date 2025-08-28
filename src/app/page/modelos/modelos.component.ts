@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { HeaderComponent } from "../../components/header/header.component";
 import { FooterComponent } from "../../components/footer/footer.component";
@@ -21,7 +22,7 @@ interface CategoriaModelos {
 @Component({
   selector: 'app-modelos',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, CommonModule],
+  imports: [HeaderComponent, FooterComponent, CommonModule, FormsModule],
   templateUrl: './modelos.component.html',
   styleUrl: './modelos.component.css'
 })
@@ -33,6 +34,8 @@ export class ModelosComponent implements OnInit {
   cilindradasDisponibles: string[] = [];
   datosListos: boolean = false;
   categoriaActiva: string = 'todos'; // Para filtros por categoría
+  cilindradaActiva: string = 'todos'; // Para filtros por cilindrada
+  busquedaActiva: boolean = false; // Para saber si hay una búsqueda en curso
 
   // Propiedades para el modal de imágenes
   modalAbierto: boolean = false;
@@ -147,9 +150,21 @@ export class ModelosComponent implements OnInit {
 
   /**
    * Filtra modelos por cilindrada
-   * @param cilindrada Cilindrada a filtrar
+   * @param evento Evento del select o cilindrada directa
    */
-  filtrarPorCilindrada(cilindrada: string): void {
+  filtrarPorCilindrada(evento: Event | string): void {
+    let cilindrada: string;
+    
+    if (typeof evento === 'string') {
+      cilindrada = evento;
+    } else {
+      const target = evento.target as HTMLSelectElement;
+      cilindrada = target.value;
+    }
+    
+    this.cilindradaActiva = cilindrada;
+    this.busquedaActiva = false; // Limpiar búsqueda al usar filtros
+    
     if (cilindrada === 'todos') {
       this.modelosFiltrados = [...this.modelos];
       this.categoriaActiva = 'todos';
@@ -164,6 +179,9 @@ export class ModelosComponent implements OnInit {
    * @param nombreCategoria Nombre de la categoría a filtrar
    */
   filtrarPorCategoria(nombreCategoria: string): void {
+    this.busquedaActiva = false; // Limpiar búsqueda al usar filtros
+    this.cilindradaActiva = 'todos'; // Resetear filtro de cilindrada
+    
     if (nombreCategoria === 'todos') {
       this.modelosFiltrados = [...this.modelos];
       this.categoriaActiva = 'todos';
@@ -179,6 +197,27 @@ export class ModelosComponent implements OnInit {
    * @returns Array de categorías visibles
    */
   getCategoriasVisibles(): CategoriaModelos[] {
+    // Si hay una búsqueda activa, mostrar solo los resultados de búsqueda organizados por categoría
+    if (this.busquedaActiva) {
+      const categoriasConModelos: CategoriaModelos[] = [];
+      
+      this.categorias.forEach(categoria => {
+        const modelosEnCategoria = this.modelosFiltrados.filter(modelo => 
+          categoria.modelos.some(modeloOriginal => modeloOriginal.nombre === modelo.nombre)
+        );
+        
+        if (modelosEnCategoria.length > 0) {
+          categoriasConModelos.push({
+            ...categoria,
+            modelos: modelosEnCategoria
+          });
+        }
+      });
+      
+      return categoriasConModelos;
+    }
+    
+    // Si no hay búsqueda, usar la lógica original de filtros
     if (this.categoriaActiva === 'todos') {
       return this.categorias.filter(categoria => categoria.modelos.length > 0);
     } else if (this.categoriaActiva === 'cilindrada') {
@@ -216,8 +255,13 @@ export class ModelosComponent implements OnInit {
     
     if (texto === '') {
       this.modelosFiltrados = [...this.modelos];
+      this.busquedaActiva = false;
     } else {
       this.modelosFiltrados = this.modelosService.buscarModelos(texto);
+      this.busquedaActiva = true;
+      // Resetear filtros cuando hay búsqueda activa
+      this.categoriaActiva = 'todos';
+      this.cilindradaActiva = 'todos';
     }
   }
 
