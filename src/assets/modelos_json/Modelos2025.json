@@ -3,80 +3,257 @@
     {
       "agnio": 2025,
       "categoria": "A2",
-      "apta": ["A2","A1","B"],
+      "apta": [
+        "A2"
+      ],
       "nombre": "Z900 A2 2025",
       "cilindrada": "948 cm³",
       "potencia": "70 kW (95 CV)",
       "descripcion": "",
       "colores": [
-            {
-                "nombre": "Metallic Moondust Gray / Metallic Spark Black / Candy Lime Green",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_GN1_STU%20(1).005.png"
-            },
-            {
-                "nombre": "Metallic Carbon Gray / Metallic Phantom Silver / Candy Persimmon Red",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_RD1_STU%20(1).001.png"
-            },
-            {
-                "nombre": "Metallic Spark Black / Metallic Carbon Gray / Ebony",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_BK1_STU%20(1).003.png"
-            }
-        ],
+        {
+          "nombre": "Metallic Moondust Gray / Metallic Spark Black / Candy Lime Green",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_GN1_STU%20(1).005.png"
+        },
+        {
+          "nombre": "Metallic Carbon Gray / Metallic Phantom Silver / Candy Persimmon Red",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_RD1_STU%20(1).001.png"
+        },
+        {
+          "nombre": "Metallic Spark Black / Metallic Carbon Gray / Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_BK1_STU%20(1).003.png"
+        }
+      ],
       "enlace": "https://www.kawasaki.es/es/products/Supernaked/2025/Z900_A2/overview?Uid=0950C1pdDQoLXFgKXwsMXF1fUFAMWlkMDQpfDlxcCQtbClA",
-      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-900-2025",
-      "precioAntes": "12.999€*",
-      "precioAhora": "12.999€*"
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-900-a2-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
     },
     {
       "agnio": 2025,
       "categoria": "A2",
-      "apta": ["A2"],
+      "apta": [
+        "A2"
+      ],
       "nombre": "NINJA ZX-4RR",
       "cilindrada": "399 cm³",
       "potencia": "57 kW (77 CV)",
       "descripcion": "",
       "colores": [
-            {
-                "nombre": "Lime Green / Ebony / Pearl Blizzard White",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja%20ZX-4RR_GN1_STU%20(1).001.png"
-            }
-        ],
+        {
+          "nombre": "Lime Green / Ebony / Pearl Blizzard White",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja%20ZX-4RR_GN1_STU%20(1).001.png"
+        }
+      ],
       "enlace": "https://www.kawasaki.es/es/products/Supersport/2025/Ninja_ZX-4RR/overview?Uid=0807XgpaWlsKUQlcUQ1YXFhdXlFaWFEKXQxQWltcWl9RDgs",
-      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-900-2025",
-      "precioAntes": "12.999€*",
-      "precioAhora": "12.999€*"
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/zx-4rr-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
     },
     {
       "agnio": 2025,
       "categoria": "A2",
-      "apta": ["A2"],
+      "apta": [
+        "A2"
+      ],
       "nombre": "Z650",
       "cilindrada": "649 cm³",
       "potencia": "50.2 kW (68 CV)",
       "descripcion": "",
       "colores": [
-            {
-                "nombre": "Metallic Spark Black / Green",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650_BK1_STU__1_.png"
-            },
-            {
-                "nombre": "Metallic Spark Black / Red",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650_BK2_STU__1_.png"
-            },
-            {
-                "nombre": "Metallic Matte Dark Gray / Metallic Spark Black",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650_GY1_STU%20(1).001.png"
-            }
-        ],
-      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2025/Z900_A2/overview?Uid=0950C1pdDQoLXFgKXwsMXF1fUFAMWlkMDQpfDlxcCQtbClA",
-      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-900-2025",
-      "precioAntes": "12.999€*",
-      "precioAhora": "12.999€*"
+        {
+          "nombre": "Metallic Spark Black / Green",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650_BK1_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Spark Black / Red",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650_BK2_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Matte Dark Gray / Metallic Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650_GY1_STU%20(1).001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2025/Z650/overview?Uid=0856CVFcDgtYXVFcC11aXFlYXglRUVpZCVEJWFoKDgleXVk",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-650-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "A2",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "Z650 RS",
+      "cilindrada": "649 cm³",
+      "potencia": "50.2 kW (68 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650RS_BK1_STU__1_.png"
+        },
+        {
+          "nombre": "Ebony / Green",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650RS_GN1_STU__1_.png"
+        },
+        {
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650RS_YL1_STU__1_.png",
+          "nombre": "Ebony / Yellow"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Vintage/2025/Z650RS/overview?Uid=08F4WgwNCQpZUV1cWloLXAsJXgldUF1cWQxdC19eDVENDlw",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-650-rs-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "A2",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "Z500",
+      "cilindrada": "451 cm³",
+      "potencia": "33.4 kW (45.4 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Spark Black / Metallic Matte Graphenesteel Gray",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z500_BK1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2025/Z500/overview?Uid=083BC1taUFsOWAxcXlFfXApbDApeUVhdX15aXAxRC1BYWA4",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-500-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "A2",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "VERSYS 650",
+      "cilindrada": "649 cm³",
+      "potencia": "49 kW (67 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Matte Graphenesteel Gray / Metallic Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Versys_650_GY1_STU__1_.png"
+        },
+        {
+          "nombre": "Pearl Robotic White / Metallic Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Versys_650_WT1_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Flat Spark Black / Metallic Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Versys%20650_BK1_STU%20(1).001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Trail/2025/Versys_650/overview?Uid=08ADDg5fX1wNXl9QXVoOXAxRXglRCl0NW1pbWQpYUV5fDQ0",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/versys-650-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "A2",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "NINJA 650",
+      "cilindrada": "649 cm³",
+      "potencia": "50.2 kW (68 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Lime Green / Ebony / Pearl Blizzard White",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_650_GN1_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Matte Carbon Gray / Flat Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_650_GY1_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Spark Black / Metallic Flat Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_650_BK1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supersport/2025/Ninja_650/overview?Uid=08EBXwpdCwlYC11ZW1wMXFBQWwpfCQwJW15ZUFxeCgwKUAs",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/ninja-650-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "A2",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "NINJA 500",
+      "cilindrada": "451 cm³",
+      "potencia": "33.4 kW (45.4 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Carbon Gray / Candy Lime Green",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_500_GY1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supersport/2025/Ninja_500/overview?Uid=081FWVtaUFhYX10MDV4JXFsKXwlfC1pRDAtYDlpdXllZWVo",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/ninja-500-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "A2",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "ELIMINATOR 500",
+      "cilindrada": "451 cm³",
+      "potencia": "33.4 kW (45.4 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Flat Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Eliminator_BK1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Cruiser/2025/Eliminator_500/overview?Uid=083EUFpaWA4MX1pfXwwNXA1aWApZX1xRWQ1eCV9dW14NXlE",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/eliminator-500-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "A2",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "W800",
+      "cilindrada": "773 cm³",
+      "potencia": "35 kW (48 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Brilliant Golden Black / Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_W800__GD1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Vintage/2025/W800/overview?Uid=0987CQ5bUAteCllQXQsMXA1bCglaXg5QDAwNXV5dCglcXg4",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/w-800-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
     }
   ],
   "electricas": [
     {
-      "agnio": 2025,
+      "agnio": 2024,
       "categoria": "ELECTRICA",
       "apta": [],
       "nombre": "NINJA 7 HYBRID",
@@ -84,82 +261,880 @@
       "potencia": "TBC kW (TBC CV)",
       "descripcion": "",
       "colores": [
-            {
-                "nombre": "Metallic Bright Silver / Metallic Matte Lime Green / Ebony",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Ninja%207%20Hybrid_SL1_STU%20(1).001.png"
-            }
-        ],
+        {
+          "nombre": "Metallic Bright Silver / Metallic Matte Lime Green / Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Ninja%207%20Hybrid_SL1_STU%20(1).001.png"
+        }
+      ],
       "enlace": "https://www.kawasaki.es/es/products/Supersport/2024/Ninja_7_Hybrid/overview?Uid=0913Cl1ZW1kLWg4KXQ4LXFhdCglfDVtQDFAOCgxdWFpdWA0",
-      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-900-2025",
-      "precioAntes": "12.999€*",
-      "precioAhora": "12.999€*"
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/ninja-7-hybrid-2024",
+      "precioAntes": 0,
+      "precioAhora": 0
     },
     {
-      "agnio": 2025,
+      "agnio": 2024,
       "categoria": "ELECTRICA",
       "apta": [],
       "nombre": "Z 7 HYBRID",
       "cilindrada": "451 cm³",
-      "potencia": "TBC kW (TBC CV)",
+      "potencia": "TBC",
       "descripcion": "",
       "colores": [
-            {
-                "nombre": "Metallic Bright Silver / Metallic Matte Lime Green / Ebony",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z%207%20Hybrid%20SE_SL1_STU%20(1).001.png"
-            },
-            {
-                "nombre": "Metallic Matte Graphenesteel Gray / Ebony / Metallic Graphite Gray",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z_7_Hybrid_SE_GY1_STU__1_.png"
-            }
-        ],
+        {
+          "nombre": "Metallic Bright Silver / Metallic Matte Lime Green / Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z%207%20Hybrid%20SE_SL1_STU%20(1).001.png"
+        },
+        {
+          "nombre": "Metallic Matte Graphenesteel Gray / Ebony / Metallic Graphite Gray",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z_7_Hybrid_SE_GY1_STU__1_.png"
+        }
+      ],
       "enlace": "https://www.kawasaki.es/es/products/Supernaked/2024/Z_7_Hybrid/overview?Uid=088BCV9ZXwwJC1xcCVEOXF1aXVFQCgteWltaCV5ZDFlYDF8",
-      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-900-2025",
-      "precioAntes": "12.999€*",
-      "precioAhora": "12.999€*"
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-7-hybrid-2024",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2024,
+      "categoria": "ELECTRICA",
+      "apta": [
+        "A1",
+        "A2",
+        "B"
+      ],
+      "nombre": "NINJA E-1",
+      "cilindrada": "",
+      "potencia": "9.0 kW (12 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Bright Silver / Metallic Matte Lime Green",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Ninja_e-1_SL1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supersport/2024/Ninja_e-1/overview?Uid=092FUV9RDQ0JDgtZWgwJXFkOWwoOUVwLDg5eWFxYXVpRDlA",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/ninja-e-1-2024",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2024,
+      "categoria": "ELECTRICA",
+      "apta": [
+        "A1",
+        "A2",
+        "B"
+      ],
+      "nombre": "Z E-1",
+      "cilindrada": "",
+      "potencia": "",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Bright Silver / Metallic Matte Lime Green",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z_e-1_SL1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2024/Z_e-1/overview?Uid=085ECV5aDFlZX1FRWwxQXA1RClBZX10KWA4LWglYWAldW18",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-e-1-2024",
+      "precioAntes": 0,
+      "precioAhora": 0
     }
   ],
   "hypersport": [
     {
-      "agnio": 2025,
-      "categoria": "ELECTRICA",
+      "agnio": 2024,
+      "categoria": "HYPERSPORT",
       "apta": [],
-      "nombre": "NINJA 7 HYBRID",
-      "cilindrada": "451 cm³",
-      "potencia": "TBC kW (TBC CV)",
+      "nombre": "NINJA H2R",
+      "cilindrada": "998 cm³",
+      "potencia": "228 kW (310 CV)",
       "descripcion": "",
       "colores": [
-            {
-                "nombre": "Metallic Bright Silver / Metallic Matte Lime Green / Ebony",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Ninja%207%20Hybrid_SL1_STU%20(1).001.png"
-            }
-        ],
-      "enlace": "https://www.kawasaki.es/es/products/Supersport/2024/Ninja_7_Hybrid/overview?Uid=0913Cl1ZW1kLWg4KXQ4LXFhdCglfDVtQDFAOCgxdWFpdWA0",
-      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-900-2025",
-      "precioAntes": "12.999€*",
-      "precioAhora": "12.999€*"
+        {
+          "nombre": "Mirror Coated Matte Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/19ZX1000Y_201GY3DRF1CG_A_001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Hypersport/2024/Ninja_H2R/overview?Uid=08F8WVkNDA1cXAxbCVsLXFENWlELXlxfWgxfDgpcDF9fWA4",
+      "enlaceKawaGo": "https://www.kawasaki.es/es/products/Hypersport/2024/Ninja_H2R/overview?Uid=08F8WVkNDA1cXAxbCVsLXFENWlELXlxfWgxfDgpcDF9fWA4",
+      "precioAntes": 0,
+      "precioAhora": 0
+    }
+  ],
+  "supersport": [
+    {
+      "agnio": 2025,
+      "categoria": "SUPERSPORT",
+      "apta": [],
+      "nombre": "NINJA ZX-10RR",
+      "cilindrada": "998 cm³",
+      "potencia": "147.1 kW (200 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Matte Graphenesteel Gray",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja%20ZX-10RR_GY2_STU%20(1).001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supersport/2025/Ninja_ZX-10RR/overview?Uid=0821ClxfUQoJWlhdWQpfXF1cCwpaCVhaUA5YXQ1QWl9fWFg",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/",
+      "precioAntes": 0,
+      "precioAhora": 0
     },
     {
       "agnio": 2025,
-      "categoria": "ELECTRICA",
+      "categoria": "SUPERSPORT",
       "apta": [],
-      "nombre": "Z 7 HYBRID",
-      "cilindrada": "451 cm³",
-      "potencia": "TBC kW (TBC CV)",
+      "nombre": "NINJA ZX-10R",
+      "cilindrada": "998 cm³",
+      "potencia": "149.3 kW (203 CV)",
       "descripcion": "",
       "colores": [
-            {
-                "nombre": "Metallic Bright Silver / Metallic Matte Lime Green / Ebony",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z%207%20Hybrid%20SE_SL1_STU%20(1).001.png"
-            },
-            {
-                "nombre": "Metallic Matte Graphenesteel Gray / Ebony / Metallic Graphite Gray",
-                "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z_7_Hybrid_SE_GY1_STU__1_.png"
-            }
-        ],
-      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2024/Z_7_Hybrid/overview?Uid=088BCV9ZXwwJC1xcCVEOXF1aXVFQCgteWltaCV5ZDFlYDF8",
+        {
+          "nombre": "Lime Green / Ebony / Pearl Blizzard White",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja%20ZX-10R_GN1_STU%20(1).001.png"
+        },
+        {
+          "nombre": "Metallic Graphite Gray / Metallic Diablo Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_ZX-10R_GY1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supersport/2025/Ninja_ZX-10R/overview?Uid=082ECltcWVBbXQ5eWwlZXFlcC1EMXgldXVxQXVgMXgpbUAk",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/zx-10r-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERSPORT",
+      "apta": [],
+      "nombre": "NINJA ZX-6R",
+      "cilindrada": "636 cm³",
+      "potencia": "91 kW (124 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Lime Green / Ebony / Pearl Blizzard White",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja%20ZX-6R_GN1_STU%20(1).001.png"
+        },
+        {
+          "nombre": "Ebony / Metallic Flat Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_ZX-6R_BK1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supersport/2025/Ninja_ZX-6R/overview?Uid=0899XVEKC1EOUQlcWgleXFpcXVAJUVBZXlkNClEKWVkJXgw",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/zx-6r-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERSPORT",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "NINJA ZX-4RR",
+      "cilindrada": "399 cm³",
+      "potencia": "57 kW (77 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Lime Green / Ebony / Pearl Blizzard White",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja%20ZX-4RR_GN1_STU%20(1).001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supersport/2025/Ninja_ZX-4RR/overview?Uid=0807XgpaWlsKUQlcUQ1YXFhdXlFaWFEKXQxQWltcWl9RDgs",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/zx-4rr-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERSPORT",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "NINJA ZX-4R",
+      "cilindrada": "399 cm³",
+      "potencia": "57 kW (77 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Ninja%20ZX-4R_BK1_STU%20(1).002.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supersport/2025/Ninja_ZX-4R/overview?Uid=0895WFgJDV8JWl1QXAkOXA5dUFFfCwldXlpRXVlaWA4MXQ0",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/zx-4r-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERSPORT",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "NINJA 650",
+      "cilindrada": "649 cm³",
+      "potencia": "50.2 kW (68 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Lime Green / Ebony / Pearl Blizzard White",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_650_GN1_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Matte Carbon Gray / Flat Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_650_GY1_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Spark Black / Metallic Flat Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_650_BK1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supersport/2025/Ninja_650/overview?Uid=08EBXwpdCwlYC11ZW1wMXFBQWwpfCQwJW15ZUFxeCgwKUAs",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/ninja-650-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERSPORT",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "NINJA 500",
+      "cilindrada": "451 cm³",
+      "potencia": "33.4 kW (45.4 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Carbon Gray / Candy Lime Green",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_500_GY1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supersport/2025/Ninja_500/overview?Uid=081FWVtaUFhYX10MDV4JXFsKXwlfC1pRDAtYDlpdXllZWVo",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/ninja-500-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERSPORT",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "NINJA 500 SE",
+      "cilindrada": "451 cm³",
+      "potencia": "33.4 kW (45.4 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Lime Green / Ebony / Pearl Blizzard White",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_500_SE_GN3_STU__1_.png"
+        },
+        {
+          "nombre": "Passion Red / Metallic Flat Spark Black / Metallic Matte Dark Gray",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_500_SE_RD1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supersport/2025/Ninja_500_SE/overview?Uid=088CW11cUF5YW10OCQkOXF4LC1FRC1BcWVgOWV4KX1pYCQk",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/ninja-500-se-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    }
+  ],
+  "supernaked": [
+    {
+      "agnio": 2025,
+      "categoria": "SUPERNAKED",
+      "apta": [],
+      "nombre": "Z H2",
+      "cilindrada": "998 cm³",
+      "potencia": "147.1 kW (200 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": " Emerald Blazed Green / Metallic Matte Graphenesteel Gray / Metallic Diablo Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z%20H2_GN1_STU%20(3).001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2025/Z_H2/overview?Uid=096DCg5fCgxfUA0MDgsLXA0OX1ANUApbX1BRCV1eXA1bW1k",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-h2-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERNAKED",
+      "apta": [],
+      "nombre": "Z H2 SE",
+      "cilindrada": "998 cm³",
+      "potencia": "147.1 kW (200 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Matte Graphenesteel Gray / Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/23MY_Z%20H2%20SE_GY2_STU%20(1).001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2025/Z_H2_SE/overview?Uid=08E3UFkJCQpeCglfDAlYXFoMDVFaXVkOWFxbC19bCVFfDlg",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-h2-se-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERNAKED",
+      "apta": [],
+      "nombre": "Z900",
+      "cilindrada": "948 cm³",
+      "potencia": "91 kW (124 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Moondust Gray / Metallic Spark Black / Candy Lime Green",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_GN1_STU%20(1).004.png"
+        },
+        {
+          "nombre": "Metallic Carbon Gray / Metallic Phantom Silver / Candy Persimmon Red",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_RD1_STU%20(1).001.png"
+        },
+        {
+          "nombre": "Metallic Spark Black / Metallic Carbon Gray / Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_BK1_STU%20(1).002.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2025/Z900/overview?Uid=095DDQxaDlsJDVBcXlFZXAtYWQoLDFBcUQ5bDgwODVsLXVA",
       "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-900-2025",
-      "precioAntes": "12.999€*",
-      "precioAhora": "12.999€*"
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERNAKED",
+      "apta": [],
+      "nombre": "Z900 SE",
+      "cilindrada": "948 cm³",
+      "potencia": "91 kW (124 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Matte Graphite Gray / Ebony / Metallic Graphite Gray",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900%20SE_GY1_STU%20(1).003.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2025/Z900_SE/overview?Uid=0832UVxZWApQWV1YClxeXF8OXgpdDl8MC11fWFxYDAlbUV0",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-900-se-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERNAKED",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "Z900 A2",
+      "cilindrada": "948 cm³",
+      "potencia": "70 kW (95 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Moondust Gray / Metallic Spark Black / Candy Lime Green",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_GN1_STU%20(1).005.png"
+        },
+        {
+          "nombre": "Metallic Carbon Gray / Metallic Phantom Silver / Candy Persimmon Red",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_RD1_STU%20(1).001.png"
+        },
+        {
+          "nombre": "Metallic Spark Black / Metallic Carbon Gray / Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900_BK1_STU%20(1).003.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2025/Z900_A2/overview?Uid=0950C1pdDQoLXFgKXwsMXF1fUFAMWlkMDQpfDlxcCQtbClA",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-900-a2-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERNAKED",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "Z650",
+      "cilindrada": "649 cm³",
+      "potencia": "50.2 kW (68 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Spark Black / Green",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650_BK1_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Spark Black / Red",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650_BK2_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Matte Dark Gray / Metallic Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650_GY1_STU%20(1).001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2025/Z650/overview?Uid=0856CVFcDgtYXVFcC11aXFlYXglRUVpZCVEJWFoKDgleXVk",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-650-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERNAKED",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "Z500",
+      "cilindrada": "451 cm³",
+      "potencia": "33.4 kW (45.4 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Spark Black / Metallic Matte Graphenesteel Gray",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z500_BK1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2025/Z500/overview?Uid=083BC1taUFsOWAxcXlFfXApbDApeUVhdX15aXAxRC1BYWA4",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-500-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERNAKED",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "Z500 SE",
+      "cilindrada": "451 cm³",
+      "potencia": "33.4 kW (45.4 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Candy Persimmon Red / Metallic Flat Spark Black / Metallic Matte Graphenesteel Gray",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z500_SE_RD1_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Moondust Gray / Metallic Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z500_SE_GY1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2025/Z500_SE/overview?Uid=0926Dg1YUQkOUFxZC1pbXA4KXwpeCVldW1AODg5bDF5eWAw",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-500-se-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SUPERNAKED",
+      "apta": [
+        "A1",
+        "A2",
+        "B"
+      ],
+      "nombre": "Z125",
+      "cilindrada": "125 cm³",
+      "potencia": "11 kW (15 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Candy Lime Green / Metallic Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z125_GN1_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Matte Graphenesteel Gray / Metallic Flat Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z125_GY1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Supernaked/2024/Z125/overview?Uid=094AWV9ZDFxdCg4NDFBcXAoLCQlfX11aXgkKXlwMXAtfCQk",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/",
+      "precioAntes": 0,
+      "precioAhora": 0
+    }
+  ],
+  "adventure_tourer": [
+    {
+      "agnio": 2025,
+      "categoria": "ADVENTURE_TOURER",
+      "apta": [],
+      "nombre": "VERSYS 1100 SE",
+      "cilindrada": "1.099 cm³",
+      "potencia": "99 kW (135 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Graphite Gray / Metallic Diablo Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Versys%201100%20SE_GY2_STU%20(1).001.png"
+        },
+        {
+          "nombre": "Pearl Robotic White / Metallic Diablo Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Versys_1100_SE_WT1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Trail/2025/Versys_1100_SE/overview?Uid=0836DVFaXlBfWwtfW1BbXFlbWApeWAoKWw5cCV4KUFtQC14",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/versys-1100-se-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "ADVENTURE_TOURER",
+      "apta": [],
+      "nombre": "VERSYS 1100 S",
+      "cilindrada": "1.099 cm³",
+      "potencia": "99 kW (135 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Graphite Gray / Metallic Diablo Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Versys%201100%20S_GY2_STU%20(1).001.png"
+        },
+        {
+          "nombre": "Pearl Robotic White / Metallic Diablo Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Versys_1100_S_WT1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Trail/2025/Versys_1100_S/overview?Uid=07C8XAxRDFFeUV9QXVhcXFBeWFANXl1QW1oKUF5fXgkLUFs",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/versys-1100-s-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "ADVENTURE_TOURER",
+      "apta": [],
+      "nombre": "VERSYS 1100",
+      "cilindrada": "1.099 cm³",
+      "potencia": "99 kW (135 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Matte Graphenesteel Gray / Metallic Diablo Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Versys%201100_GY1_STU%20(1).001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Trail/2025/Versys_1100/overview?Uid=089BDVtcXQsODgpZWA4OXApdW1FdWlsOUV4KDVhfW1pfW1E",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/versys-1100-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "ADVENTURE_TOURER",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "VERSYS 650",
+      "cilindrada": "649 cm³",
+      "potencia": "49 kW (67 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Matte Graphenesteel Gray / Metallic Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Versys_650_GY1_STU__1_.png"
+        },
+        {
+          "nombre": "Pearl Robotic White / Metallic Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Versys_650_WT1_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Flat Spark Black / Metallic Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Versys%20650_BK1_STU%20(1).001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Trail/2025/Versys_650/overview?Uid=08ADDg5fX1wNXl9QXVoOXAxRXglRCl0NW1pbWQpYUV5fDQ0",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/versys-650-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    }
+  ],
+  "sport_tourer": [
+    {
+      "agnio": 2025,
+      "categoria": "SPORT_TOURER",
+      "apta": [],
+      "nombre": "NINJA H2 SX SE",
+      "cilindrada": "998 cm³",
+      "potencia": "147.1 kW (200 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Emerald Blazed Green / Metallic Diablo Black / Metallic Matte Graphenesteel Gray",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja%20H2%20SX%20SE_GN1_STU%20(1).001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Sport_Tourer/2025/Ninja_H2_SX_SE/overview?Uid=08F2DQ1eCV5ZUFlYUQoKXFlbDVBcC10NWl0OUQsLWQ4JUVk",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/ninja-h2-sx-se-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SPORT_TOURER",
+      "apta": [],
+      "nombre": "NINJA H2 SX",
+      "cilindrada": "998 cm³",
+      "potencia": "147.1 kW (200 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Diablo Black / Metallic Flat Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja%20H2%20SX_BK1_STU%20(1).001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Sport_Tourer/2025/Ninja_H2_SX/overview?Uid=0860WFtcC19bXwtQXlsNXFoKUAlZX1paXw1RWgoNDl1YDVk",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/ninja-h2-sx-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SPORT_TOURER",
+      "apta": [],
+      "nombre": "NINJA 1100 SX SE",
+      "cilindrada": "1.099 cm³",
+      "potencia": "100 kW (126 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Emerald Blazed Green / Metallic Diablo Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja%201000SX%20SE_GN1_STU%20(1).001.png"
+        },
+        {
+          "nombre": "Metallic Matte Graphenesteel Gray / Metallic Diablo Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja_1000SX_SE_GY2_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Sport_Tourer/2025/Ninja_1100SX_SE/overview?Uid=0888X1sKCw0KDFkOWw1YXF9aClENWF5fW11cWg0JXVtYUFk",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/ninja-1100-sx-se-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "SPORT_TOURER",
+      "apta": [],
+      "nombre": "NINJA 1100 SX",
+      "cilindrada": "1.099 cm³",
+      "potencia": "100 kW (126 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Carbon Gray / Metallic Diablo Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Ninja%201000SX_GY1_STU%20(1).002.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Sport_Tourer/2025/Ninja_1100SX/overview?Uid=093BCw5YCQ4LWFxdUFsJXAtZWgpbCwpbXQtcXgsMUApcC1o",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/ninja-1100-sx-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    }
+  ],
+  "modern_classic": [
+    {
+      "agnio": 2025,
+      "categoria": "MODERN_CLASSIC",
+      "apta": [],
+      "nombre": "Z900 RS",
+      "cilindrada": "948 cm³",
+      "potencia": "82 kW (111 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Ino Red",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900RS_RD1_STU%20(1).001.png"
+        },
+        {
+          "nombre": "Metallic Diablo Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900RS_BK1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Vintage/2025/Z900RS/overview?Uid=0979DFBaDg0OWQtYXVkNXFlfCQkNXQwLDA1YXQ1QC1hRCls",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-900-rs-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "MODERN_CLASSIC",
+      "apta": [],
+      "nombre": "Z900 RS SE",
+      "cilindrada": "948 cm³",
+      "potencia": "82 kW (111 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Flat Spark Black / Metallic Matte Carbon Gray",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z900RS%20SE_BK2_STU%20(1).001.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Vintage/2025/Z900RS_SE/overview?Uid=08FDXlEJWwoOC1BdUQlRXA1cW1BaDVBYXQkJXQ1QDVoJXQo",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-900-rs-se-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "MODERN_CLASSIC",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "Z650 RS",
+      "cilindrada": "649 cm³",
+      "potencia": "50.2 kW (68 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650RS_BK1_STU__1_.png"
+        },
+        {
+          "nombre": "Ebony / Green",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650RS_GN1_STU__1_.png"
+        },
+        {
+          "nombre": "Ebony / Yellow",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Z650RS_YL1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Vintage/2025/Z650RS/overview?Uid=08F4WgwNCQpZUV1cWloLXAsJXgldUF1cWQxdC19eDVENDlw",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/z-650-rs-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2024,
+      "categoria": "MODERN_CLASSIC",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "Z650 RS",
+      "cilindrada": "649 cm³",
+      "potencia": "50.2 kW (68 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Candy Medium Red",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z650RS__RD1_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Phantom Silver / Metallic Matte Carbon Gray",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z650RS__SL1_STU__1_.png"
+        },
+        {
+          "nombre": "Ebony / Metallic Matte Carbon Gray",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Z650RS__BK1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Vintage/2024/Z650RS/overview?Uid=088BWgxdC1heUQ0LCgoLXAtbClFeXVxbWV1RCl5aCl5cWVo",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "MODERN_CLASSIC",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "W800",
+      "cilindrada": "773 cm³",
+      "potencia": "35 kW (48 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Brilliant Golden Black / Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_W800__GD1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Vintage/2025/W800/overview?Uid=0987CQ5bUAteCllQXQsMXA1bCglaXg5QDAwNXV5dCglcXg4",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/w-800-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    }
+  ],
+  "cruiser": [
+    {
+      "agnio": 2025,
+      "categoria": "CRUISER",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "ELIMINATOR 500 SE",
+      "cilindrada": "451 cm³",
+      "potencia": "33.4 kW (45.4 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Matte Carbon Gray / Flat Ebony",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Eliminator_SE_GY1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Cruiser/2025/Eliminator_500_SE/overview?Uid=087DWFpbDVkLXVhbUVwMXAtcWgpdCwxdC15cCl0LWwpdWF0",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/eliminator-500-se-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "CRUISER",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "ELIMINATOR 500",
+      "cilindrada": "451 cm³",
+      "potencia": "33.4 kW (45.4 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Mirror Coated Matte Spark Metallic Flat Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Eliminator_BK1_STU__1_.png"
+        },
+        {
+          "nombre": "Pearl Robotic White",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/24MY_Eliminator_500_WT1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Cruiser/2025/Eliminator_500/overview?Uid=083EUFpaWA4MX1pfXwwNXA1aWApZX1xRWQ1eCV9dW14NXlE",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/eliminator-500-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
+    },
+    {
+      "agnio": 2025,
+      "categoria": "CRUISER",
+      "apta": [
+        "A2"
+      ],
+      "nombre": "VULCAN S",
+      "cilindrada": "649 cm³",
+      "potencia": "44.7 kW (61 CV)",
+      "descripcion": "",
+      "colores": [
+        {
+          "nombre": "Metallic Flat Spark Black / Metallic Flat Raw Graystone",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Vulcan_S_GY2_STU__1_.png"
+        },
+        {
+          "nombre": "Metallic Flat Spark Black",
+          "url": "https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/25MY_Vulcan_S_BK1_STU__1_.png"
+        }
+      ],
+      "enlace": "https://www.kawasaki.es/es/products/Cruiser/2025/Vulcan_S/overview?Uid=08C8WV4LDAxbDQpeCQwMXFlbX1BQXltYDQwNXFBfW1hQCVA",
+      "enlaceKawaGo": "https://kawa-go.kawasaki.es/modelo/vulcan-s-2025",
+      "precioAntes": 0,
+      "precioAhora": 0
     }
   ]
 }

@@ -134,7 +134,13 @@ export class ModelosComponent implements OnInit {
     const titulos: { [key: string]: string } = {
       'modelosA2': 'Modelos A2',
       'electricas': 'Motocicletas Eléctricas',
-      'hypersport': 'Motocicletas Hypersport'
+      'hypersport': 'Hypersport',
+      'supersport': 'SuperSport',
+      'supernaked': 'SuperNaked',
+      'adventure_tourer': 'Adventure Tourer',
+      'sport_tourer': 'Sport Tourer',
+      'modern_classic': 'Modern Classic',
+      'cruiser': 'Cruiser'
     };
     return titulos[nombreCategoria] || nombreCategoria.charAt(0).toUpperCase() + nombreCategoria.slice(1);
   }

@@ -35,20 +35,36 @@ export class UbicacionesSectionComponent implements OnInit, OnDestroy {
   }
 
   // Carruseles de ubicaciones
-  slidesCadiz: string[] = [
+/*   slidesCadiz: string[] = [
     'assets/img/BodyHome/puntomotorcadiz/fondo.webp',
     'assets/img/BodyHome/puntomotorcadiz/IMG_1962-e1639754425333.webp',
     'assets/img/BodyHome/puntomotorcadiz/IMG_4909.webp',
     'assets/img/BodyHome/puntomotorcadiz/6a9d3e5e-7490-4af4-a1cc-0f9f1dca21f8.webp',
     'assets/img/BodyHome/puntomotorcadiz/8aa59de3-4a80-49e1-8442-16b868c676e0.webp'
+  ]; */
+
+    slidesCadiz: string[] = [
+    'https://lh3.googleusercontent.com/p/AF1QipMTb6sOIMf0zHc3SNxK62-oOOTl7LwUMQc-4AeG=s680-w680-h510-rw',
+    'https://lh3.googleusercontent.com/p/AF1QipOuRgXjnAZF8cumSoG4c6yt0SKYaGFE00k3A9UY=s680-w680-h510-rw',
+    'https://lh3.googleusercontent.com/p/AF1QipMQ1dekQTwUDSEFgLqWCV6gRnmlYFUvpBFkNwn9=s680-w680-h510-rw',
+    'https://lh3.googleusercontent.com/p/AF1QipOlov2Roc2A6n15fYxqO0iWaki-kna32CsIvt8-=s680-w680-h510-rw',
+    'https://lh3.googleusercontent.com/p/AF1QipPtmtdcVdg5giCkxDSKCob2WDJAVZLuZwnFWBOo=s680-w680-h510-rw'
   ];
   
-  slidesSevilla: string[] = [
+/*   slidesSevilla: string[] = [
     'assets/img/BodyHome/puntomotorsevilla/fachada.webp',
     'assets/img/BodyHome/puntomotorsevilla/fachada-2.webp',
     'assets/img/BodyHome/puntomotorsevilla/concesionario3.webp',
     'assets/img/BodyHome/puntomotorsevilla/taller.webp',
     'assets/img/BodyHome/puntomotorsevilla/IMG_7544.webp'
+  ]; */
+
+    slidesSevilla: string[] = [
+    'https://lh3.googleusercontent.com/p/AF1QipNtg0AfzpJjO7gfO_zsDiueoU_C1Vmew1gSiBuA=s2880-w2880-h1660-rw',
+    'https://lh3.googleusercontent.com/p/AF1QipNxGlzeuqCM_T-KzT3ctn1amBSsvlYFc2fgQCGd=s2880-w2880-h1660-rw',
+    'https://lh3.googleusercontent.com/p/AF1QipPJD3GfW8SWnchce5TTPAk-Mtfb_ol5vZIKW0I=s680-w680-h510-rw',
+    'https://lh3.googleusercontent.com/p/AF1QipOoF-DqdE4jR3apQa6hjDXJZ8OUeKhD0a_xfr70=s2880-w2880-h1660-rw',
+    'https://lh3.googleusercontent.com/p/AF1QipN8y7ntVF3jO1cBHGZga1CIjMe_ypcjBbl86M4=s680-w680-h510-rw'
   ];
   
   slideActivoCadiz = 0;

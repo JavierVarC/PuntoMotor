@@ -17,11 +17,6 @@
 
       <!-- Controles personalizados dentro del visor -->
       <div class="custom-controls-overlay">
-        <!-- Logo 360° en esquina superior derecha -->
-        <div class="logo-360-overlay">
-          <img [src]="logo360" alt="360°" class="logo-360-inset">
-        </div>
-        
         <!-- Navegación de ubicaciones -->
         <div class="location-navigation-overlay">
           <button class="nav-btn-overlay prev" 
@@ -39,6 +34,11 @@
                   title="Siguiente ubicación">
             <i class="fas fa-chevron-right"></i>
           </button>
+        </div>
+
+        <!-- Logo 360° en la parte inferior central -->
+        <div class="logo-360-overlay">
+          <img [src]="logo360" alt="360°" class="logo-360-inset">
         </div>
       </div>
     </div>

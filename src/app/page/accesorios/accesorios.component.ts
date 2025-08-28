@@ -24,11 +24,11 @@ export class AccesoriosComponent implements OnInit {
 
   ngOnInit(): void {
     this.accesoriosService.getAccesorios().subscribe(data => {
-      this.accesorios = data;
+      this.accesorios = data.map(acc => ({ ...acc, imgIndex: 0 }));
     });
 
     this.accesoriosService.getMerchandise().subscribe(data => {
-      this.merchandise = data;
+      this.merchandise = data.map(acc => ({ ...acc, imgIndex: 0 }));
     });
 
     // Scroll automático al fragmento si existe

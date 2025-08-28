@@ -1039,11 +1039,12 @@
   }
 }
 
-/* Logo 360° dentro del visor */
+/* Logo 360° dentro del visor - ahora en la parte inferior central */
 .logo-360-overlay {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   pointer-events: none;
   z-index: 150;
 }
@@ -1065,8 +1066,9 @@
 /* Responsivo para logo dentro del visor */
 @media (max-width: 768px) {
   .logo-360-overlay {
-    top: 15px;
-    right: 15px;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   .logo-360-inset {
