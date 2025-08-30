@@ -28,7 +28,32 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ##Despliegue en GitHub Pages
-ng build --output-path=dist/browser --base-href "/PuntoMotor/"
-npx angular-cli-ghpages --dir=dist/browser/browser
+
+Para desplegar en GitHub Pages, ejecuta los siguientes comandos:
+
+### Método 1: Script automatizado (Recomendado)
+```bash
+# Instalar gh-pages (solo la primera vez)
+npm install --save-dev gh-pages
+
+# Construir y desplegar en un solo comando
+npm run deploy:github
+```
+
+### Método 2: Comandos manuales
+```bash
+# 1. Construir el proyecto para producción
+npm run build:prod
+# o manualmente: ng build --base-href "/PuntoMotor/"
+
+# 2. Desplegar a GitHub Pages
+npm run deploy
+# o manualmente: npx gh-pages -d dist/punto-motor/browser
+```
+
+### Scripts disponibles en package.json:
+- `npm run build:prod` - Construye para producción con base-href correcto
+- `npm run deploy` - Despliega la carpeta dist a GitHub Pages
+- `npm run deploy:github` - Construye y despliega en un solo comando
 
 Web Desplegada: https://javiervarc.github.io/PuntoMotor/home

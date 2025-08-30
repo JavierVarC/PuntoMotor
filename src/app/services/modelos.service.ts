@@ -161,17 +161,27 @@ export class ModelosService {
   /**
    * Busca modelos por texto en nombre o descripción en todas las categorías
    * @param texto Texto a buscar
-   * @returns Array de Modelos que coinciden
+   * @returns Array de Modelos que coinciden (sin duplicados)
    */
   buscarModelos(texto: string): Modelos[] {
     const textoLower = texto.toLowerCase();
     const resultados: Modelos[] = [];
+    const modelosVistos = new Set<string>(); // Para evitar duplicados
+    
     for (const categoria in this.todasLasCategorias) {
       const modelosEncontrados = this.todasLasCategorias[categoria].filter((modelo: Modelos) => 
         modelo.nombre.toLowerCase().includes(textoLower) ||
         modelo.descripcion.toLowerCase().includes(textoLower)
       );
-      resultados.push(...modelosEncontrados);
+      
+      // Agregar solo modelos que no hayamos visto antes
+      modelosEncontrados.forEach(modelo => {
+        const claveUnica = `${modelo.nombre}-${modelo.cilindrada}-${modelo.agnio}`;
+        if (!modelosVistos.has(claveUnica)) {
+          modelosVistos.add(claveUnica);
+          resultados.push(modelo);
+        }
+      });
     }
     return resultados;
   }

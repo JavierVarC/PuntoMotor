@@ -5,36 +5,42 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ng build --base-href \"https://puntomotor.es/\"",
+    "build:github": "ng build --base-href \"/PuntoMotor/\"",
+    "deploy": "gh-pages -d dist/punto-motor/browser",
+    "deploy:github": "npm run build:prod && npm run deploy",
+    "deploy:domain": "npm run build:prod && npm run deploy",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
   "dependencies": {
-  "@angular/animations": "^20.2.0",
-  "@angular/common": "^20.2.0",
-  "@angular/compiler": "^20.2.0",
-  "@angular/core": "^20.2.0",
-  "@angular/forms": "^20.2.0",
-  "@angular/platform-browser": "^20.2.0",
-  "@angular/platform-browser-dynamic": "^20.2.0",
-  "@angular/router": "^20.2.0",
+    "@angular/animations": "^20.2.0",
+    "@angular/common": "^20.2.0",
+    "@angular/compiler": "^20.2.0",
+    "@angular/core": "^20.2.0",
+    "@angular/forms": "^20.2.0",
+    "@angular/platform-browser": "^20.2.0",
+    "@angular/platform-browser-dynamic": "^20.2.0",
+    "@angular/router": "^20.2.0",
     "@fortawesome/fontawesome-free": "^7.0.0",
     "@photo-sphere-viewer/core": "^5.13.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-  "zone.js": "~0.15.0"
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^20.2.0",
     "@angular/cli": "^20.2.0",
-  "@angular/compiler-cli": "^20.2.0",
+    "@angular/compiler-cli": "^20.2.0",
     "@types/jasmine": "~5.1.0",
+    "gh-pages": "^6.3.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-  "typescript": "^5.9.2"
+    "typescript": "^5.9.2"
   }
 }
